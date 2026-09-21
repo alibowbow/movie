@@ -3,54 +3,72 @@
     {
       "id": "01",
       "name": "Warmth in the Void",
-      "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789990922/movie/interstellar/bgm-01-warmth-in-the-void.mp3",
+      "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789993159/movie/interstellar/v2-bgm-01.mp3",
       "source": "https://suno.com/song/339bd4e8-caa2-47f0-8f64-0afee309f44f",
       "offset": 0,
-      "gain": 0.72
+      "gain": 0.72,
+      "sourceOffset": 0,
+      "duration": 20,
+      "bytes": 357961
     },
     {
       "id": "02",
       "name": "Nearing the Planet",
-      "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789991103/movie/interstellar/bgm-02-nearing-the-planet.mp3",
+      "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789993167/movie/interstellar/v2-bgm-02.mp3",
       "source": "https://suno.com/song/e48c0e40-aa19-4d2d-8554-51066e85fe54",
       "offset": 0,
-      "gain": 0.72
+      "gain": 0.72,
+      "sourceOffset": 0,
+      "duration": 44,
+      "bytes": 842826
     },
     {
       "id": "03",
       "name": "Mountains of Water",
-      "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789991110/movie/interstellar/bgm-03-mountains-of-water.mp3",
+      "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789993176/movie/interstellar/v2-bgm-03.mp3",
       "source": "https://suno.com/song/bc54d612-2f08-4b9a-b4b6-cd4fac6931d9",
-      "offset": 15.5,
-      "gain": 0.72
+      "offset": 0,
+      "gain": 0.72,
+      "sourceOffset": 15.5,
+      "duration": 44,
+      "bytes": 866589
     },
     {
       "id": "04",
       "name": "Match the Spin",
-      "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789991241/movie/interstellar/bgm-04-match-the-spin.mp3",
+      "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789993184/movie/interstellar/v2-bgm-04.mp3",
       "source": "https://suno.com/song/062d8d05-d652-47b7-b09c-d1af977b708b",
-      "offset": 124.7,
-      "gain": 0.72
+      "offset": 0,
+      "gain": 0.72,
+      "sourceOffset": 124.7,
+      "duration": 38,
+      "bytes": 721268
     },
     {
       "id": "05",
       "name": "The Last Burn",
-      "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789991249/movie/interstellar/bgm-05-the-last-burn.mp3",
+      "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789993193/movie/interstellar/v2-bgm-05.mp3",
       "source": "https://suno.com/song/99034e91-d155-4599-9048-482a4a1394fc",
-      "offset": 29.9,
-      "gain": 0.72
+      "offset": 0,
+      "gain": 0.72,
+      "sourceOffset": 29.9,
+      "duration": 42,
+      "bytes": 780651
     },
     {
       "id": "06",
       "name": "A Message Home",
-      "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789991259/movie/interstellar/bgm-06-a-message-home.mp3",
+      "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789993207/movie/interstellar/v2-bgm-06.mp3",
       "source": "https://suno.com/song/69902784-832d-41d5-b477-43ef557e5379",
-      "offset": 76.5,
-      "gain": 0.72
+      "offset": 0,
+      "gain": 0.72,
+      "sourceOffset": 76.5,
+      "duration": 52,
+      "bytes": 893850
     }
   ],
   "dialogue": {
-    "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789991301/movie/interstellar/dialogue-27-lines.mp3",
+    "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789993665/movie/interstellar/v2-dialogue-algenib.mp3",
     "provider": "Gemini Voice Studio",
     "cues": [
       {
@@ -61,30 +79,30 @@
         "start": 5.5,
         "end": 7.896,
         "tempo": 1,
-        "sourceStart": 0,
-        "sourceEnd": 3.155
+        "offset": 0.0,
+        "duration": 2.396
       },
       {
         "index": 2,
         "speaker": "COOPER",
-        "voice": "Fenrir",
+        "voice": "Algenib",
         "text": "Then let's see what's out there.",
         "start": 10.5,
-        "end": 12.48,
+        "end": 12.695458,
         "tempo": 1,
-        "sourceStart": 0,
-        "sourceEnd": 2.345
+        "offset": 2.496,
+        "duration": 2.195458
       },
       {
         "index": 3,
         "speaker": "COOPER",
-        "voice": "Fenrir",
+        "voice": "Algenib",
         "text": "There it is. Hold this heading.",
         "start": 23.5,
-        "end": 25.517,
+        "end": 24.888542,
         "tempo": 1,
-        "sourceStart": 2.345,
-        "sourceEnd": 4.915
+        "offset": 4.791458,
+        "duration": 1.388542
       },
       {
         "index": 4,
@@ -94,30 +112,30 @@
         "start": 32.5,
         "end": 35.744,
         "tempo": 1,
-        "sourceStart": 0,
-        "sourceEnd": 4.055
+        "offset": 6.28,
+        "duration": 3.244
       },
       {
         "index": 5,
         "speaker": "COOPER",
-        "voice": "Fenrir",
+        "voice": "Algenib",
         "text": "Stay with me. We're almost through.",
         "start": 40.0,
-        "end": 42.301,
+        "end": 42.149708,
         "tempo": 1,
-        "sourceStart": 4.915,
-        "sourceEnd": 7.66
+        "offset": 9.624,
+        "duration": 2.149708
       },
       {
         "index": 6,
         "speaker": "COOPER",
-        "voice": "Fenrir",
+        "voice": "Algenib",
         "text": "We're through. Check our position.",
         "start": 47.0,
-        "end": 49.125,
+        "end": 48.621375,
         "tempo": 1,
-        "sourceStart": 7.66,
-        "sourceEnd": 10.265
+        "offset": 11.873708,
+        "duration": 1.621375
       },
       {
         "index": 7,
@@ -127,8 +145,8 @@
         "start": 51.7,
         "end": 55.367,
         "tempo": 1,
-        "sourceStart": 0,
-        "sourceEnd": 4.245
+        "offset": 13.595083,
+        "duration": 3.667
       },
       {
         "index": 8,
@@ -138,19 +156,19 @@
         "start": 58.0,
         "end": 60.497,
         "tempo": 1,
-        "sourceStart": 4.245,
-        "sourceEnd": 7.651
+        "offset": 17.362083,
+        "duration": 2.497
       },
       {
         "index": 9,
         "speaker": "COOPER",
-        "voice": "Fenrir",
+        "voice": "Algenib",
         "text": "Looks shallow. I'm setting her down.",
         "start": 67.0,
-        "end": 69.316,
+        "end": 69.6405,
         "tempo": 1,
-        "sourceStart": 10.265,
-        "sourceEnd": 13.035
+        "offset": 19.959083,
+        "duration": 2.6405
       },
       {
         "index": 10,
@@ -160,41 +178,41 @@
         "start": 76.0,
         "end": 78.815,
         "tempo": 1,
-        "sourceStart": 4.055,
-        "sourceEnd": 8.04
+        "offset": 22.699583,
+        "duration": 2.815
       },
       {
         "index": 11,
         "speaker": "COOPER",
-        "voice": "Fenrir",
+        "voice": "Algenib",
         "text": "It's a wave. Everyone back to the ship.",
         "start": 82.0,
-        "end": 84.512,
+        "end": 84.754125,
         "tempo": 1,
-        "sourceStart": 13.035,
-        "sourceEnd": 15.955
+        "offset": 25.614583,
+        "duration": 2.754125
       },
       {
         "index": 12,
         "speaker": "COOPER",
-        "voice": "Fenrir",
+        "voice": "Algenib",
         "text": "Come on. We need to move.",
         "start": 92.0,
-        "end": 93.625,
+        "end": 94.3,
         "tempo": 1,
-        "sourceStart": 15.955,
-        "sourceEnd": 17.915
+        "offset": 28.468708,
+        "duration": 2.3
       },
       {
         "index": 13,
         "speaker": "COOPER",
-        "voice": "Fenrir",
+        "voice": "Algenib",
         "text": "Climbing. Keep your eyes on that crest.",
         "start": 100.0,
-        "end": 102.37,
+        "end": 103.169875,
         "tempo": 1,
-        "sourceStart": 17.915,
-        "sourceEnd": 20.665
+        "offset": 30.868708,
+        "duration": 3.169875
       },
       {
         "index": 14,
@@ -204,19 +222,19 @@
         "start": 110.5,
         "end": 113.022,
         "tempo": 1,
-        "sourceStart": 8.04,
-        "sourceEnd": 11.79
+        "offset": 34.138583,
+        "duration": 2.522
       },
       {
         "index": 15,
         "speaker": "COOPER",
-        "voice": "Fenrir",
+        "voice": "Algenib",
         "text": "Match her rotation. Keep us on the axis.",
         "start": 118.5,
-        "end": 121.488,
+        "end": 121.014958,
         "tempo": 1,
-        "sourceStart": 20.665,
-        "sourceEnd": 24.03
+        "offset": 36.760583,
+        "duration": 2.514958
       },
       {
         "index": 16,
@@ -226,41 +244,41 @@
         "start": 130.0,
         "end": 132.731,
         "tempo": 1.216,
-        "sourceStart": 3.155,
-        "sourceEnd": 7.815
+        "offset": 39.375542,
+        "duration": 2.731
       },
       {
         "index": 17,
         "speaker": "COOPER",
-        "voice": "Fenrir",
+        "voice": "Algenib",
         "text": "Easy... hold it there.",
         "start": 137.0,
-        "end": 138.9,
+        "end": 140.528125,
         "tempo": 1,
-        "sourceStart": 24.03,
-        "sourceEnd": 26.28
+        "offset": 42.206542,
+        "duration": 3.528125
       },
       {
         "index": 18,
         "speaker": "COOPER",
-        "voice": "Fenrir",
+        "voice": "Algenib",
         "text": "We're locked. Bring the engines online.",
         "start": 142.0,
-        "end": 144.494,
+        "end": 144.591875,
         "tempo": 1,
-        "sourceStart": 26.28,
-        "sourceEnd": 29.115
+        "offset": 45.834667,
+        "duration": 2.591875
       },
       {
         "index": 19,
         "speaker": "COOPER",
-        "voice": "Fenrir",
+        "voice": "Algenib",
         "text": "We can use the gravity to reach the next world.",
         "start": 149.0,
-        "end": 151.844,
+        "end": 151.700208,
         "tempo": 1,
-        "sourceStart": 29.115,
-        "sourceEnd": 32.305
+        "offset": 48.526542,
+        "duration": 2.700208
       },
       {
         "index": 20,
@@ -270,19 +288,19 @@
         "start": 158.0,
         "end": 160.202,
         "tempo": 1,
-        "sourceStart": 7.815,
-        "sourceEnd": 11.491
+        "offset": 51.32675,
+        "duration": 2.202
       },
       {
         "index": 21,
         "speaker": "COOPER",
-        "voice": "Fenrir",
+        "voice": "Algenib",
         "text": "I'm detaching. Keep the Endurance on course.",
         "start": 169.0,
-        "end": 172.021,
+        "end": 171.64325,
         "tempo": 1,
-        "sourceStart": 32.305,
-        "sourceEnd": 35.685
+        "offset": 53.62875,
+        "duration": 2.64325
       },
       {
         "index": 22,
@@ -292,64 +310,85 @@
         "start": 173.0,
         "end": 174.968,
         "tempo": 1,
-        "sourceStart": 11.79,
-        "sourceEnd": 15.291
+        "offset": 56.372,
+        "duration": 1.968
       },
       {
         "index": 23,
         "speaker": "COOPER",
-        "voice": "Fenrir",
+        "voice": "Algenib",
         "text": "Making sure you get there.",
         "start": 177.0,
-        "end": 178.631,
+        "end": 178.760875,
         "tempo": 1,
-        "sourceStart": 35.685,
-        "sourceEnd": 37.72
+        "offset": 58.44,
+        "duration": 1.760875
       },
       {
         "index": 24,
         "speaker": "COOPER",
-        "voice": "Fenrir",
+        "voice": "Algenib",
         "text": "This is her room. But every moment is here.",
         "start": 191.0,
-        "end": 194.087,
+        "end": 195.540208,
         "tempo": 1,
-        "sourceStart": 37.72,
-        "sourceEnd": 41.11
+        "offset": 60.300875,
+        "duration": 4.540208
       },
       {
         "index": 25,
         "speaker": "COOPER",
-        "voice": "Fenrir",
+        "voice": "Algenib",
         "text": "She can't hear me. I have to show her.",
         "start": 200.0,
-        "end": 202.505,
+        "end": 204.4,
         "tempo": 1,
-        "sourceStart": 41.11,
-        "sourceEnd": 43.965
+        "offset": 64.941083,
+        "duration": 4.4
       },
       {
         "index": 26,
         "speaker": "COOPER",
-        "voice": "Fenrir",
+        "voice": "Algenib",
         "text": "The watch. She still has it.",
         "start": 211.0,
-        "end": 213.072,
+        "end": 214.200042,
         "tempo": 1,
-        "sourceStart": 43.965,
-        "sourceEnd": 46.34
+        "offset": 69.441083,
+        "duration": 3.200042
       },
       {
         "index": 27,
         "speaker": "COOPER",
-        "voice": "Fenrir",
+        "voice": "Algenib",
         "text": "Look at the second hand, Murph. Just look.",
         "start": 218.0,
-        "end": 220.83,
+        "end": 222.370958,
         "tempo": 1,
-        "sourceStart": 46.34,
-        "sourceEnd": 49.571
+        "offset": 72.741125,
+        "duration": 4.370958
       }
-    ]
+    ],
+    "format": "timed-audio-sprite",
+    "bytes": 927692
+  },
+  "effects": {
+    "wave": {
+      "name": "Miller Planet — Approaching Wave",
+      "provider": "Suno Sounds",
+      "source": "https://suno.com/song/3063b54a-dbad-4f46-a48b-561066e391f8",
+      "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789993677/movie/interstellar/miller-approaching-wave.mp3",
+      "bytes": 442462,
+      "edit": "32-second approach and wash, pitch-preserving stretch, 6-second fade-in and 5-second fade-out",
+      "cues": [
+        {
+          "index": 1,
+          "start": 76,
+          "end": 108,
+          "offset": 0,
+          "duration": 32
+        }
+      ]
+    }
   }
 }

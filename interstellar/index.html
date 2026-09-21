@@ -20,8 +20,8 @@
 </style>
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <meta name="description" content="블랙홀과 파도, 시간 너머의 신호. 음악과 대사가 함께하는 4분의 3D 우주 여정.">
-<style>.archive-link{position:fixed;top:17px;left:26px;z-index:19;color:#eae7e1;text-decoration:none;font-size:11px;padding:9px 12px;background:#05070899;border:1px solid #ffffff25;backdrop-filter:blur(12px)}#masthead{left:164px}.media-status{font-size:11px;color:#b8b5ad;line-height:1.8;max-width:500px;margin:14px auto}#retry-media{display:none;margin:5px auto;padding:8px 14px}#voice-level{width:85px;accent-color:#cbbda4}.music-bottom label{white-space:nowrap}body.clean .archive-link{display:none}@media(max-width:650px){.archive-link{top:6px;left:8px;font-size:10px}#masthead{left:120px}#masthead strong{display:none}.start-inner{padding-top:0}.media-status{padding:0 14px;font-size:10px}}</style>
-</head><body><a class="archive-link" href="../">← 영화 목록</a>
+<style>.archive-link{position:fixed;top:17px;left:26px;z-index:19;color:#eae7e1;text-decoration:none;font-size:11px;padding:9px 12px;background:#05070899;border:1px solid #ffffff25;backdrop-filter:blur(12px)}#masthead{left:34px}.media-status{font-size:11px;color:#b8b5ad;line-height:1.8;max-width:500px;margin:14px auto}#retry-media{display:none;margin:5px auto;padding:8px 14px}#voice-level{width:85px;accent-color:#cbbda4}.music-bottom label{white-space:nowrap}body.clean .archive-link{display:none}@media(max-width:650px){.archive-link{top:6px;left:8px;font-size:10px}#masthead{left:17px}#masthead strong{display:none}.start-inner{padding-top:0}.media-status{padding:0 14px;font-size:10px}}</style>
+</head><body>
 <canvas id="film" aria-label="인터스텔라 실시간 3D 시네마틱"></canvas>
 <div class="bar top"></div><div class="bar bottom"></div>
 <div id="masthead"><strong>INTERSTELLAR</strong><span><i class="live-dot"></i>REAL-TIME CINEMA <span style="opacity:.45"> / </span> 04:00</span></div>
@@ -79,9 +79,9 @@ const M={
  rod:(a,b,r)=>{const y=V.norm(V.sub(b,a)),x=V.norm(V.cross(Math.abs(y[1])>.98?[1,0,0]:[0,1,0],y)),z=V.cross(x,y),p=V.mul(V.add(a,b),.5),l=V.len(V.sub(b,a));return new Float32Array([x[0]*r,x[1]*r,x[2]*r,0,y[0]*l,y[1]*l,y[2]*l,0,z[0]*r,z[1]*r,z[2]*r,0,...p,1]);}
 };
 const hex=s=>{s=s.replace('#','');return[0,2,4].map(i=>Math.pow(parseInt(s.slice(i,i+2),16)/255,2.2));};
-const MEDIA={"music": [{"id": "01", "name": "Warmth in the Void", "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789990922/movie/interstellar/bgm-01-warmth-in-the-void.mp3", "source": "https://suno.com/song/339bd4e8-caa2-47f0-8f64-0afee309f44f", "offset": 0, "gain": 0.72}, {"id": "02", "name": "Nearing the Planet", "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789991103/movie/interstellar/bgm-02-nearing-the-planet.mp3", "source": "https://suno.com/song/e48c0e40-aa19-4d2d-8554-51066e85fe54", "offset": 0, "gain": 0.72}, {"id": "03", "name": "Mountains of Water", "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789991110/movie/interstellar/bgm-03-mountains-of-water.mp3", "source": "https://suno.com/song/bc54d612-2f08-4b9a-b4b6-cd4fac6931d9", "offset": 15.5, "gain": 0.72}, {"id": "04", "name": "Match the Spin", "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789991241/movie/interstellar/bgm-04-match-the-spin.mp3", "source": "https://suno.com/song/062d8d05-d652-47b7-b09c-d1af977b708b", "offset": 124.7, "gain": 0.72}, {"id": "05", "name": "The Last Burn", "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789991249/movie/interstellar/bgm-05-the-last-burn.mp3", "source": "https://suno.com/song/99034e91-d155-4599-9048-482a4a1394fc", "offset": 29.9, "gain": 0.72}, {"id": "06", "name": "A Message Home", "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789991259/movie/interstellar/bgm-06-a-message-home.mp3", "source": "https://suno.com/song/69902784-832d-41d5-b477-43ef557e5379", "offset": 76.5, "gain": 0.72}], "dialogue": {"url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789991301/movie/interstellar/dialogue-27-lines.mp3", "provider": "Gemini Voice Studio", "cues": [{"index": 1, "speaker": "TARS", "voice": "Schedar", "text": "All systems are green.", "start": 5.5, "end": 7.896, "tempo": 1, "sourceStart": 0, "sourceEnd": 3.155}, {"index": 2, "speaker": "COOPER", "voice": "Fenrir", "text": "Then let's see what's out there.", "start": 10.5, "end": 12.48, "tempo": 1, "sourceStart": 0, "sourceEnd": 2.345}, {"index": 3, "speaker": "COOPER", "voice": "Fenrir", "text": "There it is. Hold this heading.", "start": 23.5, "end": 25.517, "tempo": 1, "sourceStart": 2.345, "sourceEnd": 4.915}, {"index": 4, "speaker": "BRAND", "voice": "Leda", "text": "Everything looks different on the other side.", "start": 32.5, "end": 35.744, "tempo": 1, "sourceStart": 0, "sourceEnd": 4.055}, {"index": 5, "speaker": "COOPER", "voice": "Fenrir", "text": "Stay with me. We're almost through.", "start": 40.0, "end": 42.301, "tempo": 1, "sourceStart": 4.915, "sourceEnd": 7.66}, {"index": 6, "speaker": "COOPER", "voice": "Fenrir", "text": "We're through. Check our position.", "start": 47.0, "end": 49.125, "tempo": 1, "sourceStart": 7.66, "sourceEnd": 10.265}, {"index": 7, "speaker": "ROMILLY", "voice": "Charon", "text": "Gargantua. And that's Miller's world below us.", "start": 51.7, "end": 55.367, "tempo": 1, "sourceStart": 0, "sourceEnd": 4.245}, {"index": 8, "speaker": "ROMILLY", "voice": "Charon", "text": "I'll hold orbit. Take the Ranger down.", "start": 58.0, "end": 60.497, "tempo": 1, "sourceStart": 4.245, "sourceEnd": 7.651}, {"index": 9, "speaker": "COOPER", "voice": "Fenrir", "text": "Looks shallow. I'm setting her down.", "start": 67.0, "end": 69.316, "tempo": 1, "sourceStart": 10.265, "sourceEnd": 13.035}, {"index": 10, "speaker": "BRAND", "voice": "Leda", "text": "Cooper... that ridge is getting closer.", "start": 76.0, "end": 78.815, "tempo": 1, "sourceStart": 4.055, "sourceEnd": 8.04}, {"index": 11, "speaker": "COOPER", "voice": "Fenrir", "text": "It's a wave. Everyone back to the ship.", "start": 82.0, "end": 84.512, "tempo": 1, "sourceStart": 13.035, "sourceEnd": 15.955}, {"index": 12, "speaker": "COOPER", "voice": "Fenrir", "text": "Come on. We need to move.", "start": 92.0, "end": 93.625, "tempo": 1, "sourceStart": 15.955, "sourceEnd": 17.915}, {"index": 13, "speaker": "COOPER", "voice": "Fenrir", "text": "Climbing. Keep your eyes on that crest.", "start": 100.0, "end": 102.37, "tempo": 1, "sourceStart": 17.915, "sourceEnd": 20.665}, {"index": 14, "speaker": "BRAND", "voice": "Leda", "text": "She's breaking apart. We have to reach her.", "start": 110.5, "end": 113.022, "tempo": 1, "sourceStart": 8.04, "sourceEnd": 11.79}, {"index": 15, "speaker": "COOPER", "voice": "Fenrir", "text": "Match her rotation. Keep us on the axis.", "start": 118.5, "end": 121.488, "tempo": 1, "sourceStart": 20.665, "sourceEnd": 24.03}, {"index": 16, "speaker": "TARS", "voice": "Schedar", "text": "Rotation matched. Closing the gap.", "start": 130.0, "end": 132.731, "tempo": 1.216, "sourceStart": 3.155, "sourceEnd": 7.815}, {"index": 17, "speaker": "COOPER", "voice": "Fenrir", "text": "Easy... hold it there.", "start": 137.0, "end": 138.9, "tempo": 1, "sourceStart": 24.03, "sourceEnd": 26.28}, {"index": 18, "speaker": "COOPER", "voice": "Fenrir", "text": "We're locked. Bring the engines online.", "start": 142.0, "end": 144.494, "tempo": 1, "sourceStart": 26.28, "sourceEnd": 29.115}, {"index": 19, "speaker": "COOPER", "voice": "Fenrir", "text": "We can use the gravity to reach the next world.", "start": 149.0, "end": 151.844, "tempo": 1, "sourceStart": 29.115, "sourceEnd": 32.305}, {"index": 20, "speaker": "TARS", "voice": "Schedar", "text": "Not with this much weight.", "start": 158.0, "end": 160.202, "tempo": 1, "sourceStart": 7.815, "sourceEnd": 11.491}, {"index": 21, "speaker": "COOPER", "voice": "Fenrir", "text": "I'm detaching. Keep the Endurance on course.", "start": 169.0, "end": 172.021, "tempo": 1, "sourceStart": 32.305, "sourceEnd": 35.685}, {"index": 22, "speaker": "BRAND", "voice": "Leda", "text": "Cooper, what are you doing?", "start": 173.0, "end": 174.968, "tempo": 1, "sourceStart": 11.79, "sourceEnd": 15.291}, {"index": 23, "speaker": "COOPER", "voice": "Fenrir", "text": "Making sure you get there.", "start": 177.0, "end": 178.631, "tempo": 1, "sourceStart": 35.685, "sourceEnd": 37.72}, {"index": 24, "speaker": "COOPER", "voice": "Fenrir", "text": "This is her room. But every moment is here.", "start": 191.0, "end": 194.087, "tempo": 1, "sourceStart": 37.72, "sourceEnd": 41.11}, {"index": 25, "speaker": "COOPER", "voice": "Fenrir", "text": "She can't hear me. I have to show her.", "start": 200.0, "end": 202.505, "tempo": 1, "sourceStart": 41.11, "sourceEnd": 43.965}, {"index": 26, "speaker": "COOPER", "voice": "Fenrir", "text": "The watch. She still has it.", "start": 211.0, "end": 213.072, "tempo": 1, "sourceStart": 43.965, "sourceEnd": 46.34}, {"index": 27, "speaker": "COOPER", "voice": "Fenrir", "text": "Look at the second hand, Murph. Just look.", "start": 218.0, "end": 220.83, "tempo": 1, "sourceStart": 46.34, "sourceEnd": 49.571}]}};
+const MEDIA={"music": [{"id": "01", "name": "Warmth in the Void", "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789993159/movie/interstellar/v2-bgm-01.mp3", "source": "https://suno.com/song/339bd4e8-caa2-47f0-8f64-0afee309f44f", "offset": 0, "gain": 0.72, "sourceOffset": 0, "duration": 20, "bytes": 357961}, {"id": "02", "name": "Nearing the Planet", "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789993167/movie/interstellar/v2-bgm-02.mp3", "source": "https://suno.com/song/e48c0e40-aa19-4d2d-8554-51066e85fe54", "offset": 0, "gain": 0.72, "sourceOffset": 0, "duration": 44, "bytes": 842826}, {"id": "03", "name": "Mountains of Water", "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789993176/movie/interstellar/v2-bgm-03.mp3", "source": "https://suno.com/song/bc54d612-2f08-4b9a-b4b6-cd4fac6931d9", "offset": 0, "gain": 0.72, "sourceOffset": 15.5, "duration": 44, "bytes": 866589}, {"id": "04", "name": "Match the Spin", "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789993184/movie/interstellar/v2-bgm-04.mp3", "source": "https://suno.com/song/062d8d05-d652-47b7-b09c-d1af977b708b", "offset": 0, "gain": 0.72, "sourceOffset": 124.7, "duration": 38, "bytes": 721268}, {"id": "05", "name": "The Last Burn", "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789993193/movie/interstellar/v2-bgm-05.mp3", "source": "https://suno.com/song/99034e91-d155-4599-9048-482a4a1394fc", "offset": 0, "gain": 0.72, "sourceOffset": 29.9, "duration": 42, "bytes": 780651}, {"id": "06", "name": "A Message Home", "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789993207/movie/interstellar/v2-bgm-06.mp3", "source": "https://suno.com/song/69902784-832d-41d5-b477-43ef557e5379", "offset": 0, "gain": 0.72, "sourceOffset": 76.5, "duration": 52, "bytes": 893850}], "dialogue": {"url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789993665/movie/interstellar/v2-dialogue-algenib.mp3", "provider": "Gemini Voice Studio", "cues": [{"index": 1, "speaker": "TARS", "voice": "Schedar", "text": "All systems are green.", "start": 5.5, "end": 7.896, "tempo": 1, "offset": 0.0, "duration": 2.396}, {"index": 2, "speaker": "COOPER", "voice": "Algenib", "text": "Then let's see what's out there.", "start": 10.5, "end": 12.695458, "tempo": 1, "offset": 2.496, "duration": 2.195458}, {"index": 3, "speaker": "COOPER", "voice": "Algenib", "text": "There it is. Hold this heading.", "start": 23.5, "end": 24.888542, "tempo": 1, "offset": 4.791458, "duration": 1.388542}, {"index": 4, "speaker": "BRAND", "voice": "Leda", "text": "Everything looks different on the other side.", "start": 32.5, "end": 35.744, "tempo": 1, "offset": 6.28, "duration": 3.244}, {"index": 5, "speaker": "COOPER", "voice": "Algenib", "text": "Stay with me. We're almost through.", "start": 40.0, "end": 42.149708, "tempo": 1, "offset": 9.624, "duration": 2.149708}, {"index": 6, "speaker": "COOPER", "voice": "Algenib", "text": "We're through. Check our position.", "start": 47.0, "end": 48.621375, "tempo": 1, "offset": 11.873708, "duration": 1.621375}, {"index": 7, "speaker": "ROMILLY", "voice": "Charon", "text": "Gargantua. And that's Miller's world below us.", "start": 51.7, "end": 55.367, "tempo": 1, "offset": 13.595083, "duration": 3.667}, {"index": 8, "speaker": "ROMILLY", "voice": "Charon", "text": "I'll hold orbit. Take the Ranger down.", "start": 58.0, "end": 60.497, "tempo": 1, "offset": 17.362083, "duration": 2.497}, {"index": 9, "speaker": "COOPER", "voice": "Algenib", "text": "Looks shallow. I'm setting her down.", "start": 67.0, "end": 69.6405, "tempo": 1, "offset": 19.959083, "duration": 2.6405}, {"index": 10, "speaker": "BRAND", "voice": "Leda", "text": "Cooper... that ridge is getting closer.", "start": 76.0, "end": 78.815, "tempo": 1, "offset": 22.699583, "duration": 2.815}, {"index": 11, "speaker": "COOPER", "voice": "Algenib", "text": "It's a wave. Everyone back to the ship.", "start": 82.0, "end": 84.754125, "tempo": 1, "offset": 25.614583, "duration": 2.754125}, {"index": 12, "speaker": "COOPER", "voice": "Algenib", "text": "Come on. We need to move.", "start": 92.0, "end": 94.3, "tempo": 1, "offset": 28.468708, "duration": 2.3}, {"index": 13, "speaker": "COOPER", "voice": "Algenib", "text": "Climbing. Keep your eyes on that crest.", "start": 100.0, "end": 103.169875, "tempo": 1, "offset": 30.868708, "duration": 3.169875}, {"index": 14, "speaker": "BRAND", "voice": "Leda", "text": "She's breaking apart. We have to reach her.", "start": 110.5, "end": 113.022, "tempo": 1, "offset": 34.138583, "duration": 2.522}, {"index": 15, "speaker": "COOPER", "voice": "Algenib", "text": "Match her rotation. Keep us on the axis.", "start": 118.5, "end": 121.014958, "tempo": 1, "offset": 36.760583, "duration": 2.514958}, {"index": 16, "speaker": "TARS", "voice": "Schedar", "text": "Rotation matched. Closing the gap.", "start": 130.0, "end": 132.731, "tempo": 1.216, "offset": 39.375542, "duration": 2.731}, {"index": 17, "speaker": "COOPER", "voice": "Algenib", "text": "Easy... hold it there.", "start": 137.0, "end": 140.528125, "tempo": 1, "offset": 42.206542, "duration": 3.528125}, {"index": 18, "speaker": "COOPER", "voice": "Algenib", "text": "We're locked. Bring the engines online.", "start": 142.0, "end": 144.591875, "tempo": 1, "offset": 45.834667, "duration": 2.591875}, {"index": 19, "speaker": "COOPER", "voice": "Algenib", "text": "We can use the gravity to reach the next world.", "start": 149.0, "end": 151.700208, "tempo": 1, "offset": 48.526542, "duration": 2.700208}, {"index": 20, "speaker": "TARS", "voice": "Schedar", "text": "Not with this much weight.", "start": 158.0, "end": 160.202, "tempo": 1, "offset": 51.32675, "duration": 2.202}, {"index": 21, "speaker": "COOPER", "voice": "Algenib", "text": "I'm detaching. Keep the Endurance on course.", "start": 169.0, "end": 171.64325, "tempo": 1, "offset": 53.62875, "duration": 2.64325}, {"index": 22, "speaker": "BRAND", "voice": "Leda", "text": "Cooper, what are you doing?", "start": 173.0, "end": 174.968, "tempo": 1, "offset": 56.372, "duration": 1.968}, {"index": 23, "speaker": "COOPER", "voice": "Algenib", "text": "Making sure you get there.", "start": 177.0, "end": 178.760875, "tempo": 1, "offset": 58.44, "duration": 1.760875}, {"index": 24, "speaker": "COOPER", "voice": "Algenib", "text": "This is her room. But every moment is here.", "start": 191.0, "end": 195.540208, "tempo": 1, "offset": 60.300875, "duration": 4.540208}, {"index": 25, "speaker": "COOPER", "voice": "Algenib", "text": "She can't hear me. I have to show her.", "start": 200.0, "end": 204.4, "tempo": 1, "offset": 64.941083, "duration": 4.4}, {"index": 26, "speaker": "COOPER", "voice": "Algenib", "text": "The watch. She still has it.", "start": 211.0, "end": 214.200042, "tempo": 1, "offset": 69.441083, "duration": 3.200042}, {"index": 27, "speaker": "COOPER", "voice": "Algenib", "text": "Look at the second hand, Murph. Just look.", "start": 218.0, "end": 222.370958, "tempo": 1, "offset": 72.741125, "duration": 4.370958}], "format": "timed-audio-sprite", "bytes": 927692}, "effects": {"wave": {"name": "Miller Planet — Approaching Wave", "provider": "Suno Sounds", "source": "https://suno.com/song/3063b54a-dbad-4f46-a48b-561066e391f8", "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789993677/movie/interstellar/miller-approaching-wave.mp3", "bytes": 442462, "edit": "32-second approach and wash, pitch-preserving stretch, 6-second fade-in and 5-second fade-out", "cues": [{"index": 1, "start": 76, "end": 108, "offset": 0, "duration": 32}]}}};
 const PARAM=new URLSearchParams(location.search);
-const state={ready:false,started:false,playing:false,t:0,anchor:0,perf:0,audioAnchor:0,audioMode:false,chapter:0,caption:true,muted:false,volume:.68,quality:PARAM.get('q')||'auto',width:1,height:1,pixelScale:1,frame:0,fps:60,draws:0,triangles:0,stats:false,manualFrame:false};
+const state={ready:false,started:false,playing:false,t:0,anchor:0,perf:0,audioAnchor:0,audioMode:false,chapter:0,caption:true,muted:false,volume:.68,quality:PARAM.get('q')||'auto',width:1,height:1,pixelScale:1,frame:0,fps:30,draws:0,triangles:0,stats:false,manualFrame:false};
 // Edit-time and source-time are intentionally distinct. This preserves the tested
 // pose/particle curves, while editing holds and adding a continuous arrival passage.
 const EDIT = [[0, 5, 0, 7], [5, 12, 7, 17], [12, 20, 17, 28], [20, 29, 28, 39], [29, 38, 39, 51], [38, 46, 51, 62], [64, 74, 62, 74], [74, 81, 74, 83], [81, 90, 83, 94], [90, 100, 94, 104], [100, 108, 104, 112], [108, 114, 112, 121], [114, 123, 121, 132], [123, 135, 132, 144], [135, 146, 144, 155], [146, 155, 155, 168], [155, 165, 168, 182], [165, 177, 182, 194], [177, 188, 194, 207], [188, 198, 207, 218], [198, 210, 218, 231], [210, 216, 231, 237], [216, 226, 237, 248], [226, 232, 248, 255], [232, 240, 255, 264]];
@@ -148,170 +148,7 @@ const chapters=[
 ];
 const atChapter=t=>{let i=0;for(let j=1;j<chapters.length;j++)if(t>=chapters[j].t)i=j;return i;};
 // Original English dialogue written for this edit; displayed, not synthesized speech.
-const captions=[
- [
-  5.5,
-  8.4,
-  "All systems are green.",
-  "TARS"
- ],
- [
-  10.5,
-  14.0,
-  "Then let's see what's out there.",
-  "COOPER"
- ],
- [
-  23.5,
-  27.0,
-  "There it is. Hold this heading.",
-  "COOPER"
- ],
- [
-  32.5,
-  36.0,
-  "Everything looks different on the other side.",
-  "BRAND"
- ],
- [
-  40.0,
-  43.5,
-  "Stay with me. We're almost through.",
-  "COOPER"
- ],
- [
-  47.0,
-  50.5,
-  "We're through. Check our position.",
-  "COOPER"
- ],
- [
-  51.7,
-  55.7,
-  "Gargantua. And that's Miller's world below us.",
-  "ROMILLY"
- ],
- [
-  58.0,
-  62.0,
-  "I'll hold orbit. Take the Ranger down.",
-  "ROMILLY"
- ],
- [
-  67.0,
-  70.3,
-  "Looks shallow. I'm setting her down.",
-  "COOPER"
- ],
- [
-  76.0,
-  79.3,
-  "Cooper... that ridge is getting closer.",
-  "BRAND"
- ],
- [
-  82.0,
-  85.2,
-  "It's a wave. Everyone back to the ship.",
-  "COOPER"
- ],
- [
-  92.0,
-  95.0,
-  "Come on. We need to move.",
-  "COOPER"
- ],
- [
-  100.0,
-  103.4,
-  "Climbing. Keep your eyes on that crest.",
-  "COOPER"
- ],
- [
-  110.5,
-  113.6,
-  "She's breaking apart. We have to reach her.",
-  "BRAND"
- ],
- [
-  118.5,
-  121.7,
-  "Match her rotation. Keep us on the axis.",
-  "COOPER"
- ],
- [
-  130.0,
-  132.8,
-  "Rotation matched. Closing the gap.",
-  "TARS"
- ],
- [
-  137.0,
-  139.5,
-  "Easy... hold it there.",
-  "COOPER"
- ],
- [
-  142.0,
-  144.6,
-  "We're locked. Bring the engines online.",
-  "COOPER"
- ],
- [
-  149.0,
-  153.3,
-  "We can use the gravity to reach the next world.",
-  "COOPER"
- ],
- [
-  158.0,
-  161.8,
-  "Not with this much weight.",
-  "TARS"
- ],
- [
-  169.0,
-  172.6,
-  "I'm detaching. Keep the Endurance on course.",
-  "COOPER"
- ],
- [
-  173.0,
-  175.5,
-  "Cooper, what are you doing?",
-  "BRAND"
- ],
- [
-  177.0,
-  180.0,
-  "Making sure you get there.",
-  "COOPER"
- ],
- [
-  191.0,
-  194.4,
-  "This is her room. But every moment is here.",
-  "COOPER"
- ],
- [
-  200.0,
-  203.9,
-  "She can't hear me. I have to show her.",
-  "COOPER"
- ],
- [
-  211.0,
-  214.0,
-  "The watch. She still has it.",
-  "COOPER"
- ],
- [
-  218.0,
-  222.3,
-  "Look at the second hand, Murph. Just look.",
-  "COOPER"
- ]
-];
+const captions=[[5.5, 8.4, "All systems are green.", "TARS"], [10.5, 14.0, "Then let's see what's out there.", "COOPER"], [23.5, 27.0, "There it is. Hold this heading.", "COOPER"], [32.5, 36.0, "Everything looks different on the other side.", "BRAND"], [40.0, 43.5, "Stay with me. We're almost through.", "COOPER"], [47.0, 50.5, "We're through. Check our position.", "COOPER"], [51.7, 55.7, "Gargantua. And that's Miller's world below us.", "ROMILLY"], [58.0, 62.0, "I'll hold orbit. Take the Ranger down.", "ROMILLY"], [67.0, 70.3, "Looks shallow. I'm setting her down.", "COOPER"], [76.0, 79.3, "Cooper... that ridge is getting closer.", "BRAND"], [82.0, 85.2, "It's a wave. Everyone back to the ship.", "COOPER"], [92.0, 95.0, "Come on. We need to move.", "COOPER"], [100.0, 103.4, "Climbing. Keep your eyes on that crest.", "COOPER"], [110.5, 113.6, "She's breaking apart. We have to reach her.", "BRAND"], [118.5, 121.7, "Match her rotation. Keep us on the axis.", "COOPER"], [130.0, 132.881, "Rotation matched. Closing the gap.", "TARS"], [137.0, 140.678, "Easy... hold it there.", "COOPER"], [142.0, 144.742, "We're locked. Bring the engines online.", "COOPER"], [149.0, 153.3, "We can use the gravity to reach the next world.", "COOPER"], [158.0, 161.8, "Not with this much weight.", "TARS"], [169.0, 172.6, "I'm detaching. Keep the Endurance on course.", "COOPER"], [173.0, 175.5, "Cooper, what are you doing?", "BRAND"], [177.0, 180.0, "Making sure you get there.", "COOPER"], [191.0, 195.69, "This is her room. But every moment is here.", "COOPER"], [200.0, 204.55, "She can't hear me. I have to show her.", "COOPER"], [211.0, 214.35, "The watch. She still has it.", "COOPER"], [218.0, 222.521, "Look at the second hand, Murph. Just look.", "COOPER"]];
 const filmErrors=[];
 function fail(e){console.error(e);filmErrors.push(String(e.stack||e));$('error').style.display='flex';$('error-detail').textContent=String(e.message||e);}
 window.addEventListener('error',e=>{if(e.error)fail(e.error);});
@@ -350,12 +187,12 @@ function full(p){gl.useProgram(p.p);gl.bindVertexArray(emptyVAO);gl.drawArrays(g
  * transforms. All repeating detail is GPU-instanced; no per-frame mesh creation. */
 function makeGeometry(vertices,indices){const vao=gl.createVertexArray();gl.bindVertexArray(vao);const vb=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,vb);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array(vertices),gl.STATIC_DRAW);for(let i=0;i<3;i++){gl.enableVertexAttribArray(i);gl.vertexAttribPointer(i,i===2?2:3,gl.FLOAT,false,32,i===0?0:i===1?12:24);}const ib=gl.createBuffer();gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER,ib);gl.bufferData(gl.ELEMENT_ARRAY_BUFFER,new Uint32Array(indices),gl.STATIC_DRAW);gl.bindVertexArray(null);return{vertices:new Float32Array(vertices),indices:new Uint32Array(indices),count:indices.length,vb,ib,vao};}
 function surface(nu,nv,fn){const v=[],ix=[];for(let y=0;y<=nv;y++)for(let x=0;x<=nu;x++){let u=x/nu,w=y/nv,p=fn(u,w),e=.0001,p1=fn(Math.min(1,u+e),w),p0=fn(Math.max(0,u-e),w),p2=fn(u,Math.min(1,w+e)),p3=fn(u,Math.max(0,w-e)),n=V.norm(V.cross(V.sub(p1,p0),V.sub(p2,p3)));v.push(...p,...n,u,w);}for(let y=0;y<nv;y++)for(let x=0;x<nu;x++){let a=y*(nu+1)+x,b=a+1,c=a+nu+1,d=c+1;ix.push(a,b,d,a,d,c);}return makeGeometry(v,ix);}
-function boxGeo(round=false){const v=[],ix=[];const faces=[[[1,0,0],[0,1,0],[0,0,1]],[[-1,0,0],[0,1,0],[0,0,-1]],[[0,1,0],[0,0,1],[1,0,0]],[[0,-1,0],[0,0,-1],[1,0,0]],[[0,0,1],[1,0,0],[0,1,0]],[[0,0,-1],[-1,0,0],[0,1,0]]];const pts=round?[-.5,-.475,-.42,0,.42,.475,.5]:[-.5,.5],N=pts.length;for(const[n,u,w]of faces){const base=v.length/8;for(let y=0;y<N;y++)for(let x=0;x<N;x++){let p=V.add(V.mul(n,.5),V.add(V.mul(u,pts[x]),V.mul(w,pts[y]))),normal=n;if(round){let q=p.map(a=>clamp(a,-.42,.42)),off=V.norm(V.sub(p,q));p=V.add(q,V.mul(off,.08));normal=off;}v.push(...p,...normal,x/(N-1),y/(N-1));}for(let y=0;y<N-1;y++)for(let x=0;x<N-1;x++){const a=base+y*N+x,b=a+1,c=a+N,d=c+1;ix.push(a,b,d,a,d,c);}}return makeGeometry(v,ix);}
+function boxGeo(round=false){const v=[],ix=[];const faces=[[[1,0,0],[0,1,0],[0,0,1]],[[-1,0,0],[0,1,0],[0,0,-1]],[[0,1,0],[0,0,1],[1,0,0]],[[0,-1,0],[0,0,-1],[1,0,0]],[[0,0,1],[1,0,0],[0,1,0]],[[0,0,-1],[-1,0,0],[0,1,0]]];const pts=round?[-.5,-.475,-.42,.42,.475,.5]:[-.5,.5],N=pts.length;for(const[n,u,w]of faces){const base=v.length/8;for(let y=0;y<N;y++)for(let x=0;x<N;x++){let p=V.add(V.mul(n,.5),V.add(V.mul(u,pts[x]),V.mul(w,pts[y]))),normal=n;if(round){let q=p.map(a=>clamp(a,-.42,.42)),off=V.norm(V.sub(p,q));p=V.add(q,V.mul(off,.08));normal=off;}v.push(...p,...normal,x/(N-1),y/(N-1));}for(let y=0;y<N-1;y++)for(let x=0;x<N-1;x++){const a=base+y*N+x,b=a+1,c=a+N,d=c+1;ix.push(a,b,d,a,d,c);}}return makeGeometry(v,ix);}
 function cylinderGeo(n=16,top=1,bottom=1){const v=[],ix=[];for(let y=0;y<=1;y++)for(let i=0;i<=n;i++){let a=i/n*TAU,r=y?top:bottom,nn=V.norm([Math.cos(a),bottom-top,Math.sin(a)]);v.push(Math.cos(a)*r,y-.5,Math.sin(a)*r,...nn,i/n,y);}for(let i=0;i<n;i++){let a=i,b=i+1,c=i+n+1,d=c+1;ix.push(a,c,d,a,d,b);}for(const y of[0,1]){let base=v.length/8;v.push(0,y-.5,0,0,y?1:-1,0,.5,.5);for(let i=0;i<=n;i++){let a=i/n*TAU,r=y?top:bottom;v.push(Math.cos(a)*r,y-.5,Math.sin(a)*r,0,y?1:-1,0,.5+.5*Math.cos(a),.5+.5*Math.sin(a));}for(let i=0;i<n;i++){if(y)ix.push(base,base+i+2,base+i+1);else ix.push(base,base+i+1,base+i+2);}}return makeGeometry(v,ix);}
 function sphereGeo(n=28,m=16){return surface(n,m,(u,v)=>{let a=u*TAU,b=v*PI;return [Math.sin(b)*Math.cos(a),Math.cos(b),Math.sin(b)*Math.sin(a)];});}
 function torusGeo(tube=.1){return surface(64,10,(u,v)=>{let a=u*TAU,b=v*TAU;return[(1+tube*Math.cos(b))*Math.cos(a),(1+tube*Math.cos(b))*Math.sin(a),tube*Math.sin(b)];});}
 function polyGeo(p,faces){const v=[],ix=[];for(const f of faces){let b=v.length/8,n=V.norm(V.cross(V.sub(p[f[1]],p[f[0]]),V.sub(p[f[2]],p[f[0]])));f.forEach((k,j)=>v.push(...p[k],...n,j===1||j===2?1:0,j>=2?1:0));for(let i=1;i<f.length-1;i++)ix.push(b,b+i,b+i+1);}return makeGeometry(v,ix);}
-const GEO={box:boxGeo(),round:boxGeo(true),cyl:cylinderGeo(),cyl8:cylinderGeo(8),cone:cylinderGeo(24,.15,1),sphere:sphereGeo(),torus:torusGeo(.08),thinring:torusGeo(.025),plane:surface(1,1,(u,v)=>[u-.5,v-.5,0]),
+const GEO={box:boxGeo(),round:boxGeo(true),cyl:cylinderGeo(),cyl8:cylinderGeo(8),cone:cylinderGeo(24,.15,1),sphere:sphereGeo(),detailSphere:sphereGeo(8,6),torus:torusGeo(.08),thinring:torusGeo(.025),plane:surface(1,1,(u,v)=>[u-.5,v-.5,0]),
  wedge:polyGeo([[-.5,-.5,.5],[.5,-.5,.5],[.34,-.4,-.5],[-.34,-.4,-.5],[-.47,.38,.42],[.47,.38,.42],[.19,-.15,-.5],[-.19,-.15,-.5]],[[0,3,2,1],[0,1,5,4],[1,2,6,5],[2,3,7,6],[3,0,4,7],[4,5,6,7]]),
  wing:polyGeo([[-.5,0,.5],[.5,0,.5],[.05,0,-.5],[-.5,.08,.5],[.5,.08,.5],[.05,.08,-.5]],[[0,1,2],[3,5,4],[0,3,4,1],[1,4,5,2],[2,5,3,0]])};
 const colors={white:hex('#c5c7c4'),bright:hex('#e8e7df'),dark:hex('#171d23'),metal:hex('#5f6972'),gold:hex('#9d8159'),glass:hex('#10262d'),blue:hex('#84c5e4'),red:hex('#ce4d38'),amber:hex('#e5ad61'),wood:hex('#493124'),book:hex('#a79574')};
@@ -366,7 +203,7 @@ class Group{
  add(geo,mat,color,matrix){const key=geo;let ar=this.data.get(key);if(!ar){ar=[];this.data.set(key,ar);}ar.push(...matrix,...(typeof color==='string'?(colors[color]||hex(color)):color),...(MAT[mat]||mat),0);return this;}
  box(p,s,mat='white',color='white',r=[0,0,0],round=false){return this.add(round?'round':'box',mat,color,M.trs(p,r,s));}
  cyl(p,s,mat='metal',color='metal',r=[0,0,0]){return this.add('cyl',mat,color,M.trs(p,r,s));}
- sph(p,s,mat='metal',color='metal'){return this.add('sphere',mat,color,M.trs(p,[0,0,0],s));}
+ sph(p,s,mat='metal',color='metal'){return this.add(Math.max(...s)<=.16?'detailSphere':'sphere',mat,color,M.trs(p,[0,0,0],s));}
  ring(p,r,mat='metal',color='metal',rot=[0,0,0],thin=false){return this.add(thin?'thinring':'torus',mat,color,M.trs(p,rot,[r,r,r]));}
  rod(a,b,r,mat='metal',color='metal'){return this.add('cyl8',mat,color,M.rod(a,b,r));}
  child(g){this.children.push(g);g.parent=this;return g;}
@@ -488,6 +325,7 @@ void main(){vec2 p=vWorld.xz;float e=.6;float dx=(waveHeight(p+vec2(e,0))-waveHe
 vec3 body=vec3(.048,.073,.077);vec3 col=mix(body,env,fres);float slope=length(vec2(dx,dz));float wave=smoothstep(12.,uWaveH*.9,vWorld.y);float backLight=pow(max(dot(normalize(vec3(-.5,.4,-.8)),-V),0.),2.);col+=vec3(.038,.09,.10)*wave*backLight;float tex=fbm(vec3(p.x*.048,p.y*.019,uTime*.14));float crest=exp(-sq((p.y-uWaveZ)/19.));float vertical=fbm(vec3(p.x*.24,p.y*.018-vWorld.y*.004,uTime*.11));float threads=pow(sat(1.-abs(vertical-.48)*3.6),14.);float broken=smoothstep(.40,.68,fbm(vec3(p.x*.08,vWorld.y*.043-uTime*.19,p.y*.009)));float foam=crest*smoothstep(.39,.64,tex)*.64+wave*threads*broken*.28;float streak=pow(sin(p.x*.48+tex*18.+vWorld.y*.004)*.5+.5,19.);foam+=streak*wave*.085;col*=mix(1.,.63+.30*max(N.y,0.),wave);col+=vec3(.006,.012,.013)*wave*threads;col=mix(col,vec3(.60,.68,.7),sat(foam)*.76);vec3 L=normalize(vec3(-.6,.32,-.65));vec3 H=normalize(V+L);float spec=pow(max(dot(N,H),0.),128.);col+=vec3(.64,.65,.62)*spec*.65;vec3 sh=vShadow.xyz/vShadow.w*.5+.5;if(uShadowOn>.5&&sh.z<1.&&sh.x>0.&&sh.x<1.&&sh.y>0.&&sh.y<1.){float v=0.;for(int i=-1;i<=1;i++)for(int j=-1;j<=1;j++)v+=step(sh.z-.003,texture(uShadow,sh.xy+vec2(i,j)/1024.).r);col*=.74+.26*v/9.;}float dist=length(uCamera-vWorld);float fog=1.-exp(-dist*.00062);col=mix(col,vec3(.62,.67,.69),fog);fragColor=vec4(col,1.);}`;
 const oceanProgram=program(oceanVS,oceanFS);
 GEO.ocean=surface(230,230,(u,v)=>{let x=(u-.5)*2,z=(v-.5)*2;return[Math.sign(x)*Math.pow(Math.abs(x),1.65)*1800,0,Math.sign(z)*Math.pow(Math.abs(z),1.65)*1800-170];});
+GEO.oceanLow=surface(128,128,(u,v)=>{let x=(u-.5)*2,z=(v-.5)*2;return[Math.sign(x)*Math.pow(Math.abs(x),1.65)*1800,0,Math.sign(z)*Math.pow(Math.abs(z),1.65)*1800-170];});
 const terrainGLSL=`float terrain(vec2 p){float h=0.;h+=18.*pow(abs(sin(p.x*.008)+cos(p.y*.012)*.5),1.6);h+=11.*sin(p.x*.021+p.y*.013)+4.*sin(p.x*.07-p.y*.046);h*=smoothstep(35.,210.,length(p));return h;}`;
 const groundVS=`#version 300 es
 precision highp float;layout(location=0)in vec3 aPosition;uniform mat4 uVP,uLightVP;out vec3 vWorld;out vec4 vShadow;${terrainGLSL}
@@ -686,11 +524,11 @@ const r=rng(86701),len=Math.floor(ac.sampleRate*3.2);this.ir=ac.createBuffer(2,l
  resetReverb(){if(this.reverb){try{this.send.disconnect(this.reverb);this.reverb.disconnect();}catch{}}this.reverb=this.ctx.createConvolver();this.reverb.buffer=this.ir;this.send.connect(this.reverb);this.reverb.connect(this.compressor);}
  async start(t){this.init();await this.ctx.resume();this.enabled=true;this.playing=true;this.reset(t);}
  now(){return this.storyBase+Math.max(0,this.ctx.currentTime-this.base);}
- reset(t){if(!this.ctx)return;const now=this.ctx.currentTime;for(const v of this.voices){try{v.g.gain.cancelScheduledValues(now);v.g.gain.setTargetAtTime(.00001,now,.01);for(const s of v.sources)s.stop(now+.045);}catch{}}this.voices.clear();music.reset();dialogue.reset();this.resetReverb();this.storyBase=t;this.base=now+.035;this.next=0;while(this.next<SCORE.length&&SCORE[this.next].t+SCORE[this.next].dur<t)this.next++;this.tick();}
+ reset(t){if(!this.ctx)return;const now=this.ctx.currentTime;for(const v of this.voices){try{v.g.gain.cancelScheduledValues(now);v.g.gain.setTargetAtTime(.00001,now,.01);for(const s of v.sources)s.stop(now+.045);}catch{}}this.voices.clear();music.reset();dialogue.reset();waveEffect.reset();this.resetReverb();this.storyBase=t;this.base=now+.035;this.next=0;while(this.next<SCORE.length&&SCORE[this.next].t+SCORE[this.next].dur<t)this.next++;this.tick();}
  async pause(){this.playing=false;if(this.ctx&&this.ctx.state==='running')await this.ctx.suspend();}
  setVolume(v){this.volume=clamp(v);if(this.ctx)this.master.gain.setTargetAtTime(this.muted?0:this.volume*.83,this.ctx.currentTime,.035);}
  setMuted(b){this.muted=b;this.setVolume(this.volume);}
- tick(){if(!this.ctx||!this.playing||this.ctx.state!=='running')return;const t=this.now();while(this.next<SCORE.length&&SCORE[this.next].t<t+.60){const e=SCORE[this.next++];if(e.t+e.dur>t+.01)this.voice(e,Math.max(0,t-e.t));}for(const v of this.voices){if(v.end<this.ctx.currentTime){try{v.g.disconnect();v.pan.disconnect();}catch{}this.voices.delete(v);}}dialogue.tick(t);music.tick(t);this.analyser.getFloatTimeDomainData(this.meter);let s=0;for(const x of this.meter)s+=x*x;this.level=Math.sqrt(s/this.meter.length);}
+ tick(){if(!this.ctx||!this.playing||this.ctx.state!=='running')return;const t=this.now();while(this.next<SCORE.length&&SCORE[this.next].t<t+.60){const e=SCORE[this.next++];if(e.t+e.dur>t+.01)this.voice(e,Math.max(0,t-e.t));}for(const v of this.voices){if(v.end<this.ctx.currentTime){try{v.g.disconnect();v.pan.disconnect();}catch{}this.voices.delete(v);}}dialogue.tick(t);waveEffect.tick(t);music.tick(t);this.analyser.getFloatTimeDomainData(this.meter);let s=0;for(const x of this.meter)s+=x*x;this.level=Math.sqrt(s/this.meter.length);}
  voice(e,offset){const ac=this.ctx;let when=Math.max(ac.currentTime+.012,this.base+e.t-this.storyBase+offset),duration=Math.max(.015,e.dur-offset);if(this.voices.size>96)return;const g=ac.createGain(),pan=ac.createStereoPanner();pan.pan.value=e.pan;g.connect(pan);pan.connect(this.input);const sources=[];let amp=e.amp;const freq=440*Math.pow(2,(e.note-69)/12);const osc=(type,f,detune=0)=>{const o=ac.createOscillator();o.type=type;o.frequency.value=f;o.detune.value=detune;sources.push(o);return o;};
 const isNoise=['wind','rumble','thrust','impact','swell','breath'].includes(e.type);
 if(isNoise){const s=ac.createBufferSource();s.buffer=this.noiseBuffer;s.loop=true;sources.push(s);const filter=ac.createBiquadFilter();filter.type=e.type==='breath'?'bandpass':'lowpass';filter.frequency.value=e.type==='wind'?850:e.type==='thrust'?540:e.type==='swell'?1800:e.type==='breath'?650:170;filter.Q.value=e.type==='breath'?.8:.45;s.connect(filter);filter.connect(g);if(e.type==='thrust')filter.frequency.linearRampToValueAtTime(1200,when+duration);if(e.type==='impact'){const o=osc('sine',90);o.frequency.setValueAtTime(90,when);o.frequency.exponentialRampToValueAtTime(27,when+.9);o.connect(g);}if(e.type==='breath'){amp*=.4;}}
@@ -768,23 +606,40 @@ class Soundtrack {
 const music=new Soundtrack();
 let mediaReady=false, mediaLoading=false;
 class DialogueTrack {
- constructor(){this.buffer=null;this.source=null;this.output=null;this.level=1.4;this.started=false;}
+ constructor(cues=MEDIA.dialogue.cues,level=1.4,duck=false){this.cues=cues;this.buffer=null;this.output=null;this.level=level;this.duck=duck;this.active=new Map();this.scheduled=new Set();}
  init(){audio.init();if(!this.output){this.output=audio.ctx.createGain();this.output.gain.value=this.level;this.output.connect(audio.compressor);}}
  setLevel(v){this.level=v;if(this.output)this.output.gain.setTargetAtTime(v,audio.ctx.currentTime,.04);}
- reset(){if(this.source){try{this.source.stop();this.source.disconnect();}catch{}}this.source=null;this.started=false;}
- speaking(t){return this.level>0&&!!this.buffer&&MEDIA.dialogue.cues.some(c=>t>=c.start-.15&&t<c.end+.25);}
- tick(t){if(!this.buffer||!audio.playing||this.started||t>=DURATION)return;this.init();this.started=true;const ac=audio.ctx;this.source=ac.createBufferSource();this.source.buffer=this.buffer;this.source.connect(this.output);this.source.start(Math.max(ac.currentTime+.012,audio.base+t-audio.storyBase),t,Math.min(DURATION-t,this.buffer.duration-t));}
+ reset(){for(const s of this.active.values()){try{s.stop();s.disconnect();}catch{}}this.active.clear();this.scheduled.clear();}
+ speaking(t){return this.level>0&&!!this.buffer&&this.cues.some(c=>t>=c.start-.15&&t<c.end+.2);}
+ tick(t){
+  if(!this.buffer||!audio.playing)return;this.init();const ac=audio.ctx;
+  if(this.duck)this.output.gain.setTargetAtTime(this.level*(dialogue.speaking(t)?.4:1),ac.currentTime,.1);
+  for(const c of this.cues){
+   if(this.scheduled.has(c.index)||c.start>t+.6||c.end<=t)continue;
+   const elapsed=Math.max(0,t-c.start),offset=c.offset+elapsed;
+   const duration=Math.min(c.duration-elapsed,this.buffer.duration-offset);
+   this.scheduled.add(c.index);if(duration<=.012)continue;
+   const source=ac.createBufferSource();source.buffer=this.buffer;source.connect(this.output);
+   source.onended=()=>{source.disconnect();if(this.active.get(c.index)===source)this.active.delete(c.index);};
+   this.active.set(c.index,source);
+   source.start(Math.max(ac.currentTime+.012,audio.base+c.start+elapsed-audio.storyBase),offset,duration);
+  }
+ }
 }
 const dialogue=new DialogueTrack();
+const waveEffect=new DialogueTrack(MEDIA.effects.wave.cues,.68,true);
 async function mediaBytes(url){const controller=new AbortController();const timeout=setTimeout(()=>controller.abort(),30000);try{const r=await fetch(url,{signal:controller.signal});if(!r.ok)throw new Error('HTTP '+r.status);return await r.arrayBuffer();}finally{clearTimeout(timeout);}}
 async function loadMedia(){
- if(mediaLoading)return;mediaLoading=true;mediaReady=false;$('begin').disabled=true;$('retry-media').style.display='none';let done=0;const status=$('media-status');status.textContent='음악과 대사 불러오는 중 · 0 / 7';
- const update=()=>{done++;status.textContent=`음악과 대사 불러오는 중 · ${done} / 7`;};
- const tasks=MEDIA.music.map(async item=>{const slot=music.slots.find(c=>c.id===item.id);if(!slot.buffer){const bytes=await mediaBytes(item.url);await music.load(item.id,new File([bytes],item.name+'.mp3',{type:'audio/mpeg'}));slot.offset=item.offset;slot.gain=item.gain;}update();});
- tasks.push((async()=>{if(!dialogue.buffer){dialogue.init();dialogue.buffer=await audio.ctx.decodeAudioData(await mediaBytes(MEDIA.dialogue.url));}update();})());
- const result=await Promise.allSettled(tasks);const failed=result.filter(r=>r.status==='rejected');mediaLoading=false;mediaReady=!failed.length;refreshMusicUI();$('begin').disabled=!mediaReady;
- status.textContent=mediaReady?'BGM 6곡 · 대사 27개 준비 완료':'일부 음향을 불러오지 못했습니다. 다시 시도하거나 음소거로 감상하세요.';
- $('retry-media').style.display=mediaReady?'none':'inline-block';for(const f of failed)console.warn('Media load failed:',f.reason);
+ if(mediaLoading)return;mediaLoading=true;mediaReady=false;$('begin').disabled=true;$('retry-media').style.display='none';let done=0;const status=$('media-status');status.textContent='음향 불러오는 중 · 0 / 8';
+ const update=()=>{done++;status.textContent=`음향 불러오는 중 · ${done} / 8`;};
+ const tasks=MEDIA.music.map(item=>async()=>{const slot=music.slots.find(c=>c.id===item.id);if(!slot.buffer){const bytes=await mediaBytes(item.url);await music.load(item.id,new File([bytes],item.name+'.mp3',{type:'audio/mpeg'}));slot.offset=item.offset;slot.gain=item.gain;}update();});
+ for(const [track,url] of [[dialogue,MEDIA.dialogue.url],[waveEffect,MEDIA.effects.wave.url]])tasks.push(async()=>{if(!track.buffer){track.init();track.buffer=await audio.ctx.decodeAudioData(await mediaBytes(url));}update();});
+ // Limit simultaneous downloads/decodes to avoid large allocation bursts.
+ const failed=[];let next=0;
+ await Promise.all([0,1].map(async()=>{while(next<tasks.length){const job=tasks[next++];try{await job();}catch(e){failed.push(e);}}}));
+ mediaLoading=false;mediaReady=!failed.length;refreshMusicUI();$('begin').disabled=!mediaReady;
+ status.textContent=mediaReady?'음향 준비 완료':'일부 음향을 불러오지 못했습니다. 다시 시도하거나 음소거로 감상하세요.';
+ $('retry-media').style.display=mediaReady?'none':'inline-block';for(const e of failed)console.warn('Media load failed:',e);
 }
 
 let musicWasPlaying=false;
@@ -831,24 +686,25 @@ vec3 antialias(vec2 uv){vec3 nw=texture(uScene,uv+vec2(-1.,-1.)*uInvResolution).
 void main(){vec2 uv=vUV,center=uv-.5;vec2 fringe=center*dot(center,center)*.0012;vec3 c=antialias(uv);c.r=mix(c.r,texture(uScene,uv+fringe).r,.13);c.b=mix(c.b,texture(uScene,uv-fringe).b,.13);if(uPlunge>0.){vec3 acc=vec3(0.);for(int i=0;i<4;i++)acc+=texture(uScene,.5+center*(1.-float(i)*.009*uPlunge)).rgb;c=mix(c,acc*.25,uPlunge*.6);}vec3 small=texture(uGlow,uv).rgb,wide=texture(uWide,uv).rgb;c+=(small*.70+wide*.75)*uBloom;c+=wide*vec3(.028,.016,.006);float vig=1.-.22*smoothstep(.12,.72,length(center*vec2(1.,.87)));c*=vig;c=filmic(c*uExposure);c=pow(c,vec3(1./2.2));float grain=(hash12(gl_FragCoord.xy+fract(uTime*.041)*481.4)-.5)*uGrain;c+=grain*(.35+.65*sqrt(max(dot(c,vec3(.3,.6,.1)),0.)));c=mix(c,vec3(.82,.91,.94),uFlash);c*=1.-uFade;fragColor=vec4(c,1.);}`;
 const thresholdProgram=program(fullVS,thresholdFS),blurProgram=program(fullVS,blurFS),postProgram=program(fullVS,postFS);
 let sceneRT,reflectRT,bloomA,bloomB,bloomC,lightVP=M.identity();
-function qualityScale(){const q=state.quality;if(q==='high')return Math.min(devicePixelRatio||1,1.6);if(q==='low')return .63;if(q==='medium')return .88;return state.pixelScale;}
-function resize(){let sw=innerWidth,sh=innerHeight;const maxW=state.quality==='high'?2200:state.quality==='low'?1100:1700;let sc=Math.min(qualityScale(),maxW/sw);let w=Math.max(320,Math.round(sw*sc)),h=Math.max(180,Math.round(sh*sc));if(canvas.width===w&&canvas.height===h&&sceneRT)return;canvas.width=w;canvas.height=h;state.width=sw;state.height=sh;[sceneRT,reflectRT,bloomA,bloomB,bloomC].forEach(destroyRT);sceneRT=renderTarget(w,h,true,true);reflectRT=renderTarget(Math.max(256,Math.floor(w*.48)),Math.max(144,Math.floor(h*.48)),true,true);let bw=Math.max(100,Math.floor(w/4)),bh=Math.max(70,Math.floor(h/4));bloomA=renderTarget(bw,bh);bloomB=renderTarget(bw,bh);bloomC=renderTarget(bw,bh);gl.bindFramebuffer(gl.FRAMEBUFFER,null);}
+function qualityScale(){const q=state.quality;if(q==='high')return Math.min(devicePixelRatio||1,1.4);if(q==='low')return .60;if(q==='medium')return .82;return state.pixelScale;}
+function fullEffects(){return state.quality==='high'||state.quality==='medium'||(state.quality==='auto'&&state.pixelScale>=.75);}
+function resize(){let sw=innerWidth,sh=innerHeight;const maxW=state.quality==='high'?1920:state.quality==='low'?960:1280;const budget=state.quality==='high'?2073600:state.quality==='low'?450000:921600;let sc=Math.min(qualityScale(),maxW/sw,Math.sqrt(budget/(sw*sh))); let w=Math.max(320,Math.round(sw*sc)),h=Math.max(180,Math.round(sh*sc));if(canvas.width===w&&canvas.height===h&&sceneRT)return;canvas.width=w;canvas.height=h;state.width=sw;state.height=sh;[sceneRT,reflectRT,bloomA,bloomB,bloomC].forEach(destroyRT);sceneRT=renderTarget(w,h,true,true);reflectRT=renderTarget(Math.max(256,Math.floor(w*.48)),Math.max(144,Math.floor(h*.48)),true,true);let bw=Math.max(100,Math.floor(w/4)),bh=Math.max(70,Math.floor(h/4));bloomA=renderTarget(bw,bh);bloomB=renderTarget(bw,bh);bloomC=renderTarget(bw,bh);gl.bindFramebuffer(gl.FRAMEBUFFER,null);}
 function cameraData(c,mirror=false){const aspect=canvas.width/canvas.height;let fov=c.fov;if(aspect<1.35)fov=2*Math.atan(Math.tan(fov*PI/360)*1.55/aspect)*180/PI;const view=M.view(c.pos,c.target,c.roll);let pos=c.pos,right=view.right,up=view.up,forward=view.forward,matrix=view.matrix;
 if(mirror){pos=[pos[0],-pos[1],pos[2]];right=[right[0],-right[1],right[2]];up=[up[0],-up[1],up[2]];forward=[forward[0],-forward[1],forward[2]];const r=right,u=up,f=forward;matrix=new Float32Array([r[0],u[0],-f[0],0,r[1],u[1],-f[1],0,r[2],u[2],-f[2],0,-V.dot(r,pos),-V.dot(u,pos),V.dot(f,pos),1]);}
 return{pos,right,up,forward,view:matrix,vp:M.mul(M.perspective(fov,aspect,.08,12000),matrix),tan:Math.tan(fov*PI/360),aspect};}
-function drawSky(c,cam){gl.disable(gl.DEPTH_TEST);gl.depthMask(false);gl.disable(gl.BLEND);gl.useProgram(skyProgram.p);u3(skyProgram,'uCamera',cam.pos);u3(skyProgram,'uRight',cam.right);u3(skyProgram,'uUp',cam.up);u3(skyProgram,'uForward',cam.forward);u1(skyProgram,'uTan',cam.tan);u1(skyProgram,'uAspect',cam.aspect);u1(skyProgram,'uTime',c.t);u1(skyProgram,'uMode',c.mode);u1(skyProgram,'uTransit',c.transit);u1(skyProgram,'uAtmosphere',c.atmosphere||0);u1(skyProgram,'uQuality',state.quality==='low'?0:1);gl.uniform2f(skyProgram.u('uResolution'),canvas.width,canvas.height);full(skyProgram);gl.depthMask(true);gl.enable(gl.DEPTH_TEST);}
-function objectUniforms(c,cam,mirror=false){const p=objectProgram;gl.useProgram(p.p);uM(p,'uVP',cam.vp);uM(p,'uLightVP',lightVP);u3(p,'uCamera',cam.pos);u3(p,'uSun',c.sun);u3(p,'uSunColor',c.sunColor);u3(p,'uAmbient',c.ambient);u3(p,'uFogColor',c.fogColor);u1(p,'uFog',c.fog);u1(p,'uTime',c.t);u1(p,'uShadowOn',c.shadow&&state.quality!=='low'?1:0);u1(p,'uClip',mirror?1:0);texUnit(p,'uShadow',shadowTex,0);texUnit(p,'uAtlas',atlasTexture,3);}
+function drawSky(c,cam){gl.disable(gl.DEPTH_TEST);gl.depthMask(false);gl.disable(gl.BLEND);gl.useProgram(skyProgram.p);u3(skyProgram,'uCamera',cam.pos);u3(skyProgram,'uRight',cam.right);u3(skyProgram,'uUp',cam.up);u3(skyProgram,'uForward',cam.forward);u1(skyProgram,'uTan',cam.tan);u1(skyProgram,'uAspect',cam.aspect);u1(skyProgram,'uTime',c.t);u1(skyProgram,'uMode',c.mode);u1(skyProgram,'uTransit',c.transit);u1(skyProgram,'uAtmosphere',c.atmosphere||0);u1(skyProgram,'uQuality',state.quality==='high'?1:0);gl.uniform2f(skyProgram.u('uResolution'),canvas.width,canvas.height);full(skyProgram);gl.depthMask(true);gl.enable(gl.DEPTH_TEST);}
+function objectUniforms(c,cam,mirror=false){const p=objectProgram;gl.useProgram(p.p);uM(p,'uVP',cam.vp);uM(p,'uLightVP',lightVP);u3(p,'uCamera',cam.pos);u3(p,'uSun',c.sun);u3(p,'uSunColor',c.sunColor);u3(p,'uAmbient',c.ambient);u3(p,'uFogColor',c.fogColor);u1(p,'uFog',c.fog);u1(p,'uTime',c.t);u1(p,'uShadowOn',c.shadow&&fullEffects()?1:0);u1(p,'uClip',mirror?1:0);texUnit(p,'uShadow',shadowTex,0);texUnit(p,'uAtlas',atlasTexture,3);}
 function drawModels(c,cam,mirror=false){objectUniforms(c,cam,mirror);for(const m of Object.values(models))if(m.visible)m.draw(objectProgram);}
-function shadows(c){if(!c.shadow||state.quality==='low')return;const eye=V.add(c.focus,V.mul(c.sun,160));const lv=M.view(eye,c.focus).matrix;lightVP=M.mul(ortho(c.shadowSize,.1,380),lv);gl.bindFramebuffer(gl.FRAMEBUFFER,shadowFB);gl.viewport(0,0,1024,1024);gl.enable(gl.DEPTH_TEST);gl.depthMask(true);gl.disable(gl.BLEND);gl.clear(gl.DEPTH_BUFFER_BIT);gl.useProgram(shadowProgram.p);uM(shadowProgram,'uVP',lightVP);uM(shadowProgram,'uLightVP',lightVP);gl.enable(gl.POLYGON_OFFSET_FILL);gl.polygonOffset(2,4);for(const m of Object.values(models))if(m.visible&&m!==models.debris&&m!==models.signal)m.draw(shadowProgram);gl.disable(gl.POLYGON_OFFSET_FILL);}
+function shadows(c){if(!c.shadow||!fullEffects())return;const eye=V.add(c.focus,V.mul(c.sun,160));const lv=M.view(eye,c.focus).matrix;lightVP=M.mul(ortho(c.shadowSize,.1,380),lv);gl.bindFramebuffer(gl.FRAMEBUFFER,shadowFB);gl.viewport(0,0,1024,1024);gl.enable(gl.DEPTH_TEST);gl.depthMask(true);gl.disable(gl.BLEND);gl.clear(gl.DEPTH_BUFFER_BIT);gl.useProgram(shadowProgram.p);uM(shadowProgram,'uVP',lightVP);uM(shadowProgram,'uLightVP',lightVP);gl.enable(gl.POLYGON_OFFSET_FILL);gl.polygonOffset(2,4);for(const m of Object.values(models))if(m.visible&&m!==models.debris&&m!==models.signal)m.draw(shadowProgram);gl.disable(gl.POLYGON_OFFSET_FILL);}
 function drawGeometry(geo){gl.bindVertexArray(geo.vao);gl.drawElements(gl.TRIANGLES,geo.count,gl.UNSIGNED_INT,0);state.draws++;state.triangles+=geo.count/3;}
-function drawOcean(c,cam,reflectionCam){const p=oceanProgram;gl.useProgram(p.p);uM(p,'uVP',cam.vp);uM(p,'uReflectVP',reflectionCam.vp);uM(p,'uLightVP',lightVP);texUnit(p,'uShadow',shadowTex,4);u1(p,'uShadowOn',c.shadow&&state.quality!=='low'?1:0);u1(p,'uTime',c.t);u1(p,'uWaveZ',c.waveZ);u1(p,'uWaveH',c.waveH);u3(p,'uCamera',cam.pos);u1(p,'uReflectOn',state.quality!=='low'?1:0);texUnit(p,'uReflection',reflectRT.tex,0);drawGeometry(GEO.ocean);}
-function particles(c,cam,kind){const p=particleProgram;gl.useProgram(p.p);uM(p,'uVP',cam.vp);u3(p,'uCamera',cam.pos);u1(p,'uTime',c.t);u1(p,'uKind',kind);u1(p,'uWaveZ',c.waveZ);u1(p,'uWaveH',c.waveH);u1(p,'uHeight',canvas.height/(2*cam.tan));gl.enable(gl.BLEND);gl.blendFunc(gl.SRC_ALPHA,kind===0?gl.ONE_MINUS_SRC_ALPHA:gl.ONE);gl.depthMask(false);gl.bindVertexArray(seedVAO);gl.drawArrays(gl.POINTS,0,state.quality==='low'?1100:kind===0?3600:2200);gl.depthMask(true);gl.disable(gl.BLEND);state.draws++;}
+function drawOcean(c,cam,reflectionCam){const p=oceanProgram;gl.useProgram(p.p);uM(p,'uVP',cam.vp);uM(p,'uReflectVP',reflectionCam.vp);uM(p,'uLightVP',lightVP);texUnit(p,'uShadow',shadowTex,4);u1(p,'uShadowOn',c.shadow&&fullEffects()?1:0);u1(p,'uTime',c.t);u1(p,'uWaveZ',c.waveZ);u1(p,'uWaveH',c.waveH);u3(p,'uCamera',cam.pos);u1(p,'uReflectOn',fullEffects()?1:0);texUnit(p,'uReflection',reflectRT.tex,0);drawGeometry(fullEffects()?GEO.ocean:GEO.oceanLow);}
+function particles(c,cam,kind){const p=particleProgram;gl.useProgram(p.p);uM(p,'uVP',cam.vp);u3(p,'uCamera',cam.pos);u1(p,'uTime',c.t);u1(p,'uKind',kind);u1(p,'uWaveZ',c.waveZ);u1(p,'uWaveH',c.waveH);u1(p,'uHeight',canvas.height/(2*cam.tan));gl.enable(gl.BLEND);gl.blendFunc(gl.SRC_ALPHA,kind===0?gl.ONE_MINUS_SRC_ALPHA:gl.ONE);gl.depthMask(false);gl.bindVertexArray(seedVAO);gl.drawArrays(gl.POINTS,0,!fullEffects()?1000:kind===0?2400:1600);gl.depthMask(true);gl.disable(gl.BLEND);state.draws++;}
 function blur(source,dest,x,y){target(dest);gl.useProgram(blurProgram.p);texUnit(blurProgram,'uSource',source.tex,0);gl.uniform2f(blurProgram.u('uDirection'),x/source.w,y/source.h);full(blurProgram);}
-function post(c){gl.disable(gl.DEPTH_TEST);gl.depthMask(false);target(bloomA);gl.useProgram(thresholdProgram.p);texUnit(thresholdProgram,'uSource',sceneRT.tex,0);gl.uniform2f(thresholdProgram.u('uPixel'),1/sceneRT.w,1/sceneRT.h);full(thresholdProgram);blur(bloomA,bloomB,1,0);blur(bloomB,bloomA,0,1);blur(bloomA,bloomC,3.5,0);blur(bloomC,bloomB,0,3.5);target(null);const p=postProgram;gl.useProgram(p.p);texUnit(p,'uScene',sceneRT.tex,0);texUnit(p,'uGlow',bloomA.tex,1);texUnit(p,'uWide',bloomB.tex,2);gl.uniform2f(p.u('uInvResolution'),1/sceneRT.w,1/sceneRT.h);u1(p,'uTime',Math.floor(c.t*24)/24);u1(p,'uExposure',c.exposure);u1(p,'uBloom',c.bloom);u1(p,'uFade',c.fade);u1(p,'uFlash',c.flash);u1(p,'uGrain',.016);u1(p,'uAspect',canvas.width/canvas.height);u1(p,'uPlunge',c.mode===4?envelope(c.t,195,206,5,1):0);full(p);gl.depthMask(true);}
+function post(c){gl.disable(gl.DEPTH_TEST);gl.depthMask(false);target(bloomA);gl.useProgram(thresholdProgram.p);texUnit(thresholdProgram,'uSource',sceneRT.tex,0);gl.uniform2f(thresholdProgram.u('uPixel'),1/sceneRT.w,1/sceneRT.h);full(thresholdProgram);blur(bloomA,bloomB,1,0);blur(bloomB,bloomA,0,1);if(fullEffects()){blur(bloomA,bloomC,3.5,0);blur(bloomC,bloomB,0,3.5);}target(null);const p=postProgram;gl.useProgram(p.p);texUnit(p,'uScene',sceneRT.tex,0);texUnit(p,'uGlow',bloomA.tex,1);texUnit(p,'uWide',bloomB.tex,2);gl.uniform2f(p.u('uInvResolution'),1/sceneRT.w,1/sceneRT.h);u1(p,'uTime',Math.floor(c.t*24)/24);u1(p,'uExposure',c.exposure);u1(p,'uBloom',c.bloom);u1(p,'uFade',c.fade);u1(p,'uFlash',c.flash);u1(p,'uGrain',.016);u1(p,'uAspect',canvas.width/canvas.height);u1(p,'uPlunge',c.mode===4?envelope(c.t,195,206,5,1):0);full(p);gl.depthMask(true);}
 let lastContext=null;
 function drawFrame(t,hero=false){if(!state.ready)return;state.draws=0;state.triangles=0;const c=directed(clamp(t,0,DURATION),hero);lastContext=c;const cam=cameraData(c),refl=cameraData(c,true);shadows(c);
-if(c.mode===2&&state.quality!=='low'){target(reflectRT);gl.clearColor(0,0,0,1);gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);drawSky(c,refl);drawModels(c,refl,true);}
-target(sceneRT);gl.clearColor(0,0,0,1);gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);drawSky(c,cam);if(c.mode===6){gl.useProgram(groundProgram.p);uM(groundProgram,'uVP',cam.vp);u3(groundProgram,'uCamera',cam.pos);uM(groundProgram,'uLightVP',lightVP);texUnit(groundProgram,'uShadow',shadowTex,4);u1(groundProgram,'uShadowOn',c.shadow&&state.quality!=='low'?1:0);drawGeometry(GEO.ground);}drawModels(c,cam);if(c.mode===2){drawOcean(c,cam,refl);particles(c,cam,0);}if(c.mode===3&&c.t>114&&c.t<145)particles(c,cam,1);if(c.mode===5)particles(c,cam,2);post(c);state.frame++;if(!hero)updateUI(t,c);}
+if(c.mode===2&&fullEffects()){target(reflectRT);gl.clearColor(0,0,0,1);gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);drawSky(c,refl);drawModels(c,refl,true);}
+target(sceneRT);gl.clearColor(0,0,0,1);gl.clear(gl.COLOR_BUFFER_BIT|gl.DEPTH_BUFFER_BIT);drawSky(c,cam);if(c.mode===6){gl.useProgram(groundProgram.p);uM(groundProgram,'uVP',cam.vp);u3(groundProgram,'uCamera',cam.pos);uM(groundProgram,'uLightVP',lightVP);texUnit(groundProgram,'uShadow',shadowTex,4);u1(groundProgram,'uShadowOn',c.shadow&&fullEffects()?1:0);drawGeometry(GEO.ground);}drawModels(c,cam);if(c.mode===2){drawOcean(c,cam,refl);particles(c,cam,0);}if(c.mode===3&&c.t>114&&c.t<145)particles(c,cam,1);if(c.mode===5)particles(c,cam,2);post(c);state.frame++;canvas.dataset.renderedFrames=String(state.frame);canvas.dataset.renderSize=canvas.width+'x'+canvas.height;if(!hero)updateUI(t,c);}
 
 
 /* Accessible player and lifecycle. File:// is a supported deployment target. */
@@ -857,8 +713,8 @@ function fmt(t){t=Math.max(0,Math.floor(t));return String(Math.floor(t/60)).padS
 let toastTimeout,idleTimer,lastUI=-1,lastChapter=-1,scrubbing=false,wasPlaying=false,busy=false;
 function toast(text){$('toast').textContent=text;$('toast').style.opacity='1';clearTimeout(toastTimeout);toastTimeout=setTimeout(()=>$('toast').style.opacity='0',1800);}
 function clockNow(){if(!state.playing)return state.t;if(audio.enabled&&audio.ctx&&audio.playing&&audio.ctx.state==='running')return clamp(audio.now(),0,DURATION);return clamp(state.anchor+(performance.now()-state.perf)/1000,0,DURATION);}
-async function play(){if(busy||!state.ready)return;busy=true;try{if(state.t>=DURATION-.05)state.t=0;if(audio.enabled){await audio.start(state.t);}state.anchor=state.t;state.perf=performance.now();state.playing=true;document.body.classList.remove('paused');$('play').innerHTML=icons.pause;}catch(e){toast('소리 없이 재생합니다.');state.anchor=state.t;state.perf=performance.now();state.playing=true;audio.enabled=false;console.warn(e);}finally{busy=false;}}
-function pause(){if(!state.ready)return;state.t=clockNow();state.playing=false;audio.pause().catch(console.warn);document.body.classList.add('paused');$('play').innerHTML=icons.play;drawFrame(state.t);}
+async function play(){if(busy||!state.ready)return;busy=true;try{if(state.t>=DURATION-.05)state.t=0;if(audio.enabled){await audio.start(state.t);}state.anchor=state.t;state.perf=performance.now();state.playing=true;document.body.classList.remove('paused');$('play').innerHTML=icons.pause;}catch(e){toast('소리 없이 재생합니다.');state.anchor=state.t;state.perf=performance.now();state.playing=true;audio.enabled=false;console.warn(e);}finally{busy=false;if(state.playing&&!raf){lastDraw=0;frames=0;frameTimer=performance.now();raf=requestAnimationFrame(loop);}}}
+function pause(){if(!state.ready)return;state.t=clockNow();state.playing=false;if(raf){cancelAnimationFrame(raf);raf=0;}audio.pause().catch(console.warn);document.body.classList.add('paused');$('play').innerHTML=icons.play;drawFrame(state.t);}
 function seek(t){state.t=clamp(t,0,DURATION);state.anchor=state.t;state.perf=performance.now();if(audio.enabled&&audio.ctx){audio.reset(state.t);}lastUI=-1;drawFrame(state.t);}
 async function begin(withSound){if(!state.ready||state.started)return;if(withSound&&!mediaReady){toast('음향을 불러오는 중입니다. 잠시 기다려주세요.');return;}state.started=true;state.muted=!withSound;audio.muted=state.muted;state.t=clamp(Number(PARAM.get('t'))||0,0,DURATION);document.body.classList.add('started');$('start').classList.add('gone');$('chapter-label').style.opacity='0';if(withSound){try{await audio.start(state.t);}catch(e){audio.enabled=false;state.muted=true;toast('음향을 시작하지 못해 무음으로 재생합니다.');console.warn(e);}}syncSound();await play();poke();}
 async function toggleMute(){if(!state.started){await begin(true);return;}state.muted=!state.muted;if(!state.muted&&!audio.enabled){const t=clockNow();try{await audio.start(t);if(!state.playing)await audio.pause();}catch(e){state.muted=true;toast('브라우저에서 오디오를 시작하지 못했습니다.');}}audio.setMuted(state.muted);syncSound();poke();}
@@ -868,7 +724,7 @@ function updateUI(t,c){if(!state.started)return;const ch=chapters[c.chapter];con
 let cap='',speaker='',alpha=0;
 if(state.caption){for(const[a,b,text,who]of captions)if(t>=a&&t<b){cap=text;speaker=who||'';alpha=envelope(t,a,b,.18,.22);break;}}
 $('caption-line').textContent=cap;$('caption-speaker').textContent=speaker;$('caption').style.opacity=String(alpha);
-let title='',sub='',op=0;if(t>=.6&&t<5.7){title='BEYOND THE KNOWN';sub='AN INTERSTELLAR TRIBUTE';op=envelope(t,.6,5.7,1.5,1.3)*.85;}if(t>=233.5){title='BEYOND THE KNOWN';sub='Somewhere, a new beginning.<br><span style="font-size:8px;letter-spacing:2px;opacity:.55">AN UNOFFICIAL TRIBUTE · ORIGINAL DIALOGUE</span>';op=envelope(t,233.5,240.3,1.5,1.0);}$('center-card').style.opacity=String(op);$('card-title').textContent=title;$('card-sub').innerHTML=sub;
+let title='',sub='',op=0;if(t>=.6&&t<5.7){title='BEYOND THE KNOWN';sub='AN INTERSTELLAR TRIBUTE';op=envelope(t,.6,5.7,1.5,1.3)*.85;}if(t>=233.5){title='BEYOND THE KNOWN';sub='Somewhere, a new beginning.<br><span style="font-size:8px;letter-spacing:2px;opacity:.55">AN UNOFFICIAL TRIBUTE · ORIGINAL DIALOGUE</span>';op=envelope(t,233.5,240.3,1.5,1.0);}$('center-card').style.opacity=String(op);$('card-title').textContent=title;if($('card-sub').innerHTML!==sub)$('card-sub').innerHTML=sub;
 if(Math.abs(t-lastUI)>.08||!state.playing){if(!scrubbing){$('seek').value=t;$('seek').style.setProperty('--progress',t/DURATION*100+'%');}$('time').textContent=fmt(t);lastUI=t;}
 if(state.stats){$('stats').textContent=`${state.fps.toFixed(1)} FPS   ${canvas.width} × ${canvas.height}\n${state.draws} draw calls   ${Math.round(state.triangles/1000)}k triangles\n${c.shot}\nt=${t.toFixed(2)}   audio=${audio.level.toFixed(4)}\n${audio.voices.size} voices · ${SCORE.length} score events`;}}
 chapters.forEach((c,i)=>{const opt=document.createElement('option');opt.value=i;opt.textContent=String(i+1).padStart(2,'0')+' '+c.ko;$('chapters').append(opt);if(i>0){const tick=document.createElement('i');tick.style.left=c.t/DURATION*100+'%';$('ticks').append(tick);}});
@@ -876,7 +732,7 @@ $('play').innerHTML=icons.play;syncSound();$('begin').addEventListener('click',(
 $('chapters').addEventListener('change',e=>{seek(chapters[Number(e.target.value)].t+.01);poke();});
 $('seek').addEventListener('pointerdown',()=>{scrubbing=true;wasPlaying=state.playing;pause();});$('seek').addEventListener('input',e=>{seek(Number(e.target.value));$('seek').style.setProperty('--progress',state.t/DURATION*100+'%');});const stopScrub=()=>{if(!scrubbing)return;scrubbing=false;if(wasPlaying)play();};$('seek').addEventListener('pointerup',stopScrub);window.addEventListener('pointerup',stopScrub);$('seek').addEventListener('change',stopScrub);
 function toggleCC(){state.caption=!state.caption;$('cc').setAttribute('aria-pressed',String(state.caption));drawFrame(clockNow());toast(state.caption?'자막 켜짐':'자막 꺼짐');}$('cc').addEventListener('click',toggleCC);
-$('quality').value=state.quality;$('quality').addEventListener('change',e=>{state.quality=e.target.value;state.pixelScale=1;resize();drawFrame(clockNow(),!state.started);toast('화질 설정을 적용했어요.');});
+$('quality').value=state.quality;$('quality').addEventListener('change',e=>{state.quality=e.target.value;state.pixelScale=.85;resize();drawFrame(clockNow(),!state.started);toast('화질 설정을 적용했어요.');});
 async function fullscreen(){try{if(document.fullscreenElement)await document.exitFullscreen();else await document.documentElement.requestFullscreen();}catch{toast('브라우저 전체 화면 기능을 사용해주세요.');}}$('fullscreen').addEventListener('click',fullscreen);
 let infoWasPlaying=false;$('info-button').addEventListener('click',()=>{infoWasPlaying=state.playing;pause();$('info').classList.add('open');});$('close-info').addEventListener('click',()=>{$('info').classList.remove('open');if(infoWasPlaying)play();poke();});
 window.addEventListener('pointermove',poke,{passive:true});window.addEventListener('touchstart',poke,{passive:true});window.addEventListener('resize',()=>{resize();drawFrame(clockNow(),!state.started);});
@@ -885,14 +741,23 @@ document.addEventListener('visibilitychange',()=>{if(document.hidden&&state.play
 canvas.addEventListener('dblclick',fullscreen);canvas.addEventListener('click',()=>{if(state.started){poke();}});
 // Public deterministic hooks for tests and custom recording integrations.
 window.Film={duration:DURATION,chapters,captions,editMap:EDIT,musicCues:MUSIC_CUES,shots:SHOTS.map(s=>({start:s[0],end:s[1],name:s[2]})),seek,play,pause,renderAt:(t)=>{if(state.playing)pause();state.started=true;state.t=t;document.body.classList.add('started');$('start').classList.add('gone');drawFrame(t);},status:()=>({ready:state.ready,time:clockNow(),playing:state.playing,chapter:chapters[atChapter(clockNow())].ko,frame:state.frame,width:canvas.width,height:canvas.height,draws:state.draws,triangles:state.triangles,errors:filmErrors,audioVoices:audio.voices.size,audioLevel:audio.level,scoreEvents:SCORE.length}),sound:audio,music:music,dialogue:dialogue,checkGL:()=>gl.getError()};
-let lastTime=performance.now(),frames=0,frameTimer=performance.now(),badWindows=0,lastDraw=-1,raf=0;
-function loop(now){raf=requestAnimationFrame(loop);if(!state.ready||document.hidden||state.manualFrame)return;const t=clockNow();if(state.playing){state.t=t;drawFrame(t);if(t>=DURATION){pause();toast('상영이 끝났어요. R 키로 다시 시작합니다.');}}else if(!state.started){if(now-lastDraw>70){drawFrame(167+(now*.001)%20,true);lastDraw=now;}}
-frames++;if(now-frameTimer>1600){state.fps=frames*1000/(now-frameTimer);if(state.quality==='auto'&&state.playing){if(state.fps<25){badWindows++;if(badWindows>=2&&state.pixelScale>.60){state.pixelScale=Math.max(.60,state.pixelScale*.88);resize();badWindows=0;}}else badWindows=0;}frames=0;frameTimer=now;}lastTime=now;}
-async function boot(){try{$('loader').textContent='우주선과 장면을 구성하는 중…';await new Promise(r=>setTimeout(r,20));models.endurance=buildEndurance();models.ranger=buildRanger();models.astronaut=buildAstronaut();models.astronaut2=buildAstronaut('second explorer');models.tars=buildTars();$('loader').textContent='시간 공간과 음향을 준비하는 중…';await new Promise(r=>setTimeout(r,10));models.tesseract=buildTesseract();models.watch=buildWatch();models.habitat=buildHabitat();makeExtras();await music.restoreEmbedded();state.pixelScale=Math.min(devicePixelRatio||1,1.0);resize();state.ready=true;
-// Render a frame of every pipeline before the start button becomes active.
-$('loader').textContent='장면을 미리 렌더링하는 중…';for(const t of[10,33,50,57,63,86,125,164,201,219,230]){drawFrame(t);await new Promise(r=>setTimeout(r,4));}drawFrame(171,true);$('loader').classList.remove('visible');$('silent').disabled=false;loadMedia();
+let frames=0,frameTimer=performance.now(),badWindows=0,lastDraw=0,raf=0;
+function loop(now){
+ raf=0;if(!state.ready||document.hidden||state.manualFrame||!state.playing)return;
+ raf=requestAnimationFrame(loop);const interval=1000/(state.quality==='high'?60:30);
+ if(lastDraw&&now-lastDraw<interval-1)return;
+ lastDraw=now-((now-lastDraw)%interval);const t=clockNow();state.t=t;drawFrame(t);frames++;
+ if(t>=DURATION){pause();toast('상영이 끝났어요. R 키로 다시 시작합니다.');return;}
+ if(now-frameTimer>=1600){state.fps=frames*1000/(now-frameTimer);
+  if(state.quality==='auto'&&state.fps<23){badWindows++;if(badWindows>=2&&state.pixelScale>.48){state.pixelScale=Math.max(.48,state.pixelScale*.84);resize();badWindows=0;}}
+  else badWindows=0;frames=0;frameTimer=now;
+ }
+}
+async function boot(){try{$('loader').textContent='우주선과 장면을 구성하는 중…';await new Promise(r=>setTimeout(r,20));models.endurance=buildEndurance();models.ranger=buildRanger();models.astronaut=buildAstronaut();models.astronaut2=buildAstronaut('second explorer');models.tars=buildTars();$('loader').textContent='시간 공간과 음향을 준비하는 중…';await new Promise(r=>setTimeout(r,10));models.tesseract=buildTesseract();models.watch=buildWatch();models.habitat=buildHabitat();makeExtras();await music.restoreEmbedded();state.pixelScale=.85;resize();state.ready=true;
+// Keep the opening frame still; rendering resumes only when playback starts.
+$('loader').textContent='준비 중…';drawFrame(171,true);$('loader').classList.remove('visible');$('silent').disabled=false;loadMedia();
 if(PARAM.get('hideui')==='1')document.body.classList.add('clean');if(PARAM.get('debug')==='1'){state.stats=true;$('stats').style.display='block';}
-if(PARAM.get('freeze')==='1'){state.manualFrame=true;state.started=true;document.body.classList.add('started','paused');$('start').classList.add('gone');state.t=clamp(Number(PARAM.get('t'))||0,0,DURATION);drawFrame(state.t);}else if(PARAM.get('autoplay')==='1'){await begin(false);}raf=requestAnimationFrame(loop);
+if(PARAM.get('freeze')==='1'){state.manualFrame=true;state.started=true;document.body.classList.add('started','paused');$('start').classList.add('gone');state.t=clamp(Number(PARAM.get('t'))||0,0,DURATION);drawFrame(state.t);}else if(PARAM.get('autoplay')==='1'){await begin(false);}if(state.playing&&!raf)raf=requestAnimationFrame(loop);
 if(PARAM.get('capture')==='1'){const b=document.createElement('button');b.textContent='미리보기 저장';b.style.cssText='position:fixed;right:20px;top:20px;z-index:100;padding:12px';b.onclick=()=>{drawFrame(state.t);canvas.toBlob(blob=>{const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='interstellar-preview.png';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),10000);},'image/png');};document.body.append(b);}
 }catch(e){fail(e);}}
 setupMusicPanel();
