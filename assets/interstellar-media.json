@@ -1,0 +1,355 @@
+{
+  "music": [
+    {
+      "id": "01",
+      "name": "Warmth in the Void",
+      "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789990922/movie/interstellar/bgm-01-warmth-in-the-void.mp3",
+      "source": "https://suno.com/song/339bd4e8-caa2-47f0-8f64-0afee309f44f",
+      "offset": 0,
+      "gain": 0.72
+    },
+    {
+      "id": "02",
+      "name": "Nearing the Planet",
+      "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789991103/movie/interstellar/bgm-02-nearing-the-planet.mp3",
+      "source": "https://suno.com/song/e48c0e40-aa19-4d2d-8554-51066e85fe54",
+      "offset": 0,
+      "gain": 0.72
+    },
+    {
+      "id": "03",
+      "name": "Mountains of Water",
+      "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789991110/movie/interstellar/bgm-03-mountains-of-water.mp3",
+      "source": "https://suno.com/song/bc54d612-2f08-4b9a-b4b6-cd4fac6931d9",
+      "offset": 15.5,
+      "gain": 0.72
+    },
+    {
+      "id": "04",
+      "name": "Match the Spin",
+      "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789991241/movie/interstellar/bgm-04-match-the-spin.mp3",
+      "source": "https://suno.com/song/062d8d05-d652-47b7-b09c-d1af977b708b",
+      "offset": 124.7,
+      "gain": 0.72
+    },
+    {
+      "id": "05",
+      "name": "The Last Burn",
+      "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789991249/movie/interstellar/bgm-05-the-last-burn.mp3",
+      "source": "https://suno.com/song/99034e91-d155-4599-9048-482a4a1394fc",
+      "offset": 29.9,
+      "gain": 0.72
+    },
+    {
+      "id": "06",
+      "name": "A Message Home",
+      "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789991259/movie/interstellar/bgm-06-a-message-home.mp3",
+      "source": "https://suno.com/song/69902784-832d-41d5-b477-43ef557e5379",
+      "offset": 76.5,
+      "gain": 0.72
+    }
+  ],
+  "dialogue": {
+    "url": "https://res.cloudinary.com/o0mjeken/video/upload/v1789991301/movie/interstellar/dialogue-27-lines.mp3",
+    "provider": "Gemini Voice Studio",
+    "cues": [
+      {
+        "index": 1,
+        "speaker": "TARS",
+        "voice": "Schedar",
+        "text": "All systems are green.",
+        "start": 5.5,
+        "end": 7.896,
+        "tempo": 1,
+        "sourceStart": 0,
+        "sourceEnd": 3.155
+      },
+      {
+        "index": 2,
+        "speaker": "COOPER",
+        "voice": "Fenrir",
+        "text": "Then let's see what's out there.",
+        "start": 10.5,
+        "end": 12.48,
+        "tempo": 1,
+        "sourceStart": 0,
+        "sourceEnd": 2.345
+      },
+      {
+        "index": 3,
+        "speaker": "COOPER",
+        "voice": "Fenrir",
+        "text": "There it is. Hold this heading.",
+        "start": 23.5,
+        "end": 25.517,
+        "tempo": 1,
+        "sourceStart": 2.345,
+        "sourceEnd": 4.915
+      },
+      {
+        "index": 4,
+        "speaker": "BRAND",
+        "voice": "Leda",
+        "text": "Everything looks different on the other side.",
+        "start": 32.5,
+        "end": 35.744,
+        "tempo": 1,
+        "sourceStart": 0,
+        "sourceEnd": 4.055
+      },
+      {
+        "index": 5,
+        "speaker": "COOPER",
+        "voice": "Fenrir",
+        "text": "Stay with me. We're almost through.",
+        "start": 40.0,
+        "end": 42.301,
+        "tempo": 1,
+        "sourceStart": 4.915,
+        "sourceEnd": 7.66
+      },
+      {
+        "index": 6,
+        "speaker": "COOPER",
+        "voice": "Fenrir",
+        "text": "We're through. Check our position.",
+        "start": 47.0,
+        "end": 49.125,
+        "tempo": 1,
+        "sourceStart": 7.66,
+        "sourceEnd": 10.265
+      },
+      {
+        "index": 7,
+        "speaker": "ROMILLY",
+        "voice": "Charon",
+        "text": "Gargantua. And that's Miller's world below us.",
+        "start": 51.7,
+        "end": 55.367,
+        "tempo": 1,
+        "sourceStart": 0,
+        "sourceEnd": 4.245
+      },
+      {
+        "index": 8,
+        "speaker": "ROMILLY",
+        "voice": "Charon",
+        "text": "I'll hold orbit. Take the Ranger down.",
+        "start": 58.0,
+        "end": 60.497,
+        "tempo": 1,
+        "sourceStart": 4.245,
+        "sourceEnd": 7.651
+      },
+      {
+        "index": 9,
+        "speaker": "COOPER",
+        "voice": "Fenrir",
+        "text": "Looks shallow. I'm setting her down.",
+        "start": 67.0,
+        "end": 69.316,
+        "tempo": 1,
+        "sourceStart": 10.265,
+        "sourceEnd": 13.035
+      },
+      {
+        "index": 10,
+        "speaker": "BRAND",
+        "voice": "Leda",
+        "text": "Cooper... that ridge is getting closer.",
+        "start": 76.0,
+        "end": 78.815,
+        "tempo": 1,
+        "sourceStart": 4.055,
+        "sourceEnd": 8.04
+      },
+      {
+        "index": 11,
+        "speaker": "COOPER",
+        "voice": "Fenrir",
+        "text": "It's a wave. Everyone back to the ship.",
+        "start": 82.0,
+        "end": 84.512,
+        "tempo": 1,
+        "sourceStart": 13.035,
+        "sourceEnd": 15.955
+      },
+      {
+        "index": 12,
+        "speaker": "COOPER",
+        "voice": "Fenrir",
+        "text": "Come on. We need to move.",
+        "start": 92.0,
+        "end": 93.625,
+        "tempo": 1,
+        "sourceStart": 15.955,
+        "sourceEnd": 17.915
+      },
+      {
+        "index": 13,
+        "speaker": "COOPER",
+        "voice": "Fenrir",
+        "text": "Climbing. Keep your eyes on that crest.",
+        "start": 100.0,
+        "end": 102.37,
+        "tempo": 1,
+        "sourceStart": 17.915,
+        "sourceEnd": 20.665
+      },
+      {
+        "index": 14,
+        "speaker": "BRAND",
+        "voice": "Leda",
+        "text": "She's breaking apart. We have to reach her.",
+        "start": 110.5,
+        "end": 113.022,
+        "tempo": 1,
+        "sourceStart": 8.04,
+        "sourceEnd": 11.79
+      },
+      {
+        "index": 15,
+        "speaker": "COOPER",
+        "voice": "Fenrir",
+        "text": "Match her rotation. Keep us on the axis.",
+        "start": 118.5,
+        "end": 121.488,
+        "tempo": 1,
+        "sourceStart": 20.665,
+        "sourceEnd": 24.03
+      },
+      {
+        "index": 16,
+        "speaker": "TARS",
+        "voice": "Schedar",
+        "text": "Rotation matched. Closing the gap.",
+        "start": 130.0,
+        "end": 132.731,
+        "tempo": 1.216,
+        "sourceStart": 3.155,
+        "sourceEnd": 7.815
+      },
+      {
+        "index": 17,
+        "speaker": "COOPER",
+        "voice": "Fenrir",
+        "text": "Easy... hold it there.",
+        "start": 137.0,
+        "end": 138.9,
+        "tempo": 1,
+        "sourceStart": 24.03,
+        "sourceEnd": 26.28
+      },
+      {
+        "index": 18,
+        "speaker": "COOPER",
+        "voice": "Fenrir",
+        "text": "We're locked. Bring the engines online.",
+        "start": 142.0,
+        "end": 144.494,
+        "tempo": 1,
+        "sourceStart": 26.28,
+        "sourceEnd": 29.115
+      },
+      {
+        "index": 19,
+        "speaker": "COOPER",
+        "voice": "Fenrir",
+        "text": "We can use the gravity to reach the next world.",
+        "start": 149.0,
+        "end": 151.844,
+        "tempo": 1,
+        "sourceStart": 29.115,
+        "sourceEnd": 32.305
+      },
+      {
+        "index": 20,
+        "speaker": "TARS",
+        "voice": "Schedar",
+        "text": "Not with this much weight.",
+        "start": 158.0,
+        "end": 160.202,
+        "tempo": 1,
+        "sourceStart": 7.815,
+        "sourceEnd": 11.491
+      },
+      {
+        "index": 21,
+        "speaker": "COOPER",
+        "voice": "Fenrir",
+        "text": "I'm detaching. Keep the Endurance on course.",
+        "start": 169.0,
+        "end": 172.021,
+        "tempo": 1,
+        "sourceStart": 32.305,
+        "sourceEnd": 35.685
+      },
+      {
+        "index": 22,
+        "speaker": "BRAND",
+        "voice": "Leda",
+        "text": "Cooper, what are you doing?",
+        "start": 173.0,
+        "end": 174.968,
+        "tempo": 1,
+        "sourceStart": 11.79,
+        "sourceEnd": 15.291
+      },
+      {
+        "index": 23,
+        "speaker": "COOPER",
+        "voice": "Fenrir",
+        "text": "Making sure you get there.",
+        "start": 177.0,
+        "end": 178.631,
+        "tempo": 1,
+        "sourceStart": 35.685,
+        "sourceEnd": 37.72
+      },
+      {
+        "index": 24,
+        "speaker": "COOPER",
+        "voice": "Fenrir",
+        "text": "This is her room. But every moment is here.",
+        "start": 191.0,
+        "end": 194.087,
+        "tempo": 1,
+        "sourceStart": 37.72,
+        "sourceEnd": 41.11
+      },
+      {
+        "index": 25,
+        "speaker": "COOPER",
+        "voice": "Fenrir",
+        "text": "She can't hear me. I have to show her.",
+        "start": 200.0,
+        "end": 202.505,
+        "tempo": 1,
+        "sourceStart": 41.11,
+        "sourceEnd": 43.965
+      },
+      {
+        "index": 26,
+        "speaker": "COOPER",
+        "voice": "Fenrir",
+        "text": "The watch. She still has it.",
+        "start": 211.0,
+        "end": 213.072,
+        "tempo": 1,
+        "sourceStart": 43.965,
+        "sourceEnd": 46.34
+      },
+      {
+        "index": 27,
+        "speaker": "COOPER",
+        "voice": "Fenrir",
+        "text": "Look at the second hand, Murph. Just look.",
+        "start": 218.0,
+        "end": 220.83,
+        "tempo": 1,
+        "sourceStart": 46.34,
+        "sourceEnd": 49.571
+      }
+    ]
+  }
+}

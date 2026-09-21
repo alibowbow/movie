@@ -36,4 +36,3 @@ Gemini Voice Studio 배역: Cooper/Fenrir, Brand/Leda, TARS/Schedar, Romilly/Cha
 `python -m http.server 8765` 실행 후 `http://localhost:8765/`를 엽니다.
 
 미리보기는 `/interstellar/?freeze=1&t=163&hideui=1&capture=1&q=high`에서 실제 렌더링 장면을 저장했습니다. `capture=1`일 때만 미리보기 저장 버튼이 표시됩니다.
-
